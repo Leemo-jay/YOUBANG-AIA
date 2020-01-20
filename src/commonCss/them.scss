@@ -1,0 +1,32 @@
+$themes: (
+  default: (
+    /* font-size */
+ //    bar-color: #005DFF,
+ //    font-color: #005DFF,
+	// sub-color: #16C1D2
+  bar-color: #d81f49,
+    font-color: #d81f49,
+  sub-color: #0b67b3
+  ),
+  // bar-color: #0b67b3,
+  //   font-color: #0b67b3,
+  // sub-color: #0b67b3
+
+  light: (
+   bar-color: #DDA35F,
+   font-color: #DDA35F,
+  ),
+);
+//
+@mixin themeify {
+  @each $theme-name, $theme-map in $themes {
+    $theme-map: $theme-map !global;
+    body[data-theme=#{$theme-name}] & {
+      @content;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

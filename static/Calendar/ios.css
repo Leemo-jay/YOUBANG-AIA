@@ -1,0 +1,21 @@
+
+   .dp-container{
+     display: block;
+     transform: none !important;
+     width: 86% !important;
+     left: 7% !important;
+     bottom: 25% !important;
+     transform: translateY(-50%);
+     font-family: Microsoft JhengHei  !important;
+   }
+   .dp-header .dp-item.dp-left{
+     color: #fff  !important;
+     font-family: Microsoft JhengHei  !important;
+   }
+   .dp-header .dp-item.dp-right{
+     color: #fff !important;
+     font-family: Microsoft JhengHei  !important;
+   }
+   .dp-header{
+      background: #d81f49;
+   }

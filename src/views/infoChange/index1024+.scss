@@ -1,0 +1,123 @@
+@media only screen and (min-width : 1024px){
+  /*.contentDiv {
+    .menu {
+      .menubox{
+        height: 100vh;
+      }
+
+    }
+  }*/
+/*.infoChange {
+  min-height:100vh;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding-top: 5rem;
+  .nav-left {
+    // width: 22%;
+    position: absolute;
+
+    width: 23.125rem;
+    height: 100%;
+    padding-top: 6.85rem;
+    background-color: #f6f6f6;
+    text-align: right;
+    box-shadow:0rem 0rem 1.0625rem 0.0625rem rgba(31,31,31,0.11);
+    .nav-item {
+      height: 3.9375rem;
+      font-weight: 400;
+      padding-right: 3.125rem;
+      margin-bottom: 1.875rem;
+      line-height: 3.9375rem;
+      font-size: 1.375rem;
+      letter-spacing: 0.125rem;
+      color: #3a3a3a;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(169, 169, 169, 1);
+        color: #fff;
+      }
+    }
+    .nav-item-select {
+      background-color: #a9a9a9;
+      color: #fff;
+      font-weight: 600;
+
+    }
+  }
+  .ml20 {
+    margin-left: 0;
+  }
+  .nav-right {
+    margin-left: 23.125rem;
+    font-size:1rem;
+    // padding-right: 9%;
+    height: 100%;
+    padding-top: 7rem;
+    padding-bottom: 6.5rem;
+    padding-left: 5%;
+    background-color: #fff;
+  }
+}*/
+  .menu {
+    width: 100%;
+    height: 100%;
+    // min-height: 43.75rem;
+    min-height: 100vh;
+    background-color: #fff;
+    // display: flex;
+    .menubox {
+      // flex: 1;
+      // display: flex;
+      /*justify-content: space-between;*/
+      width: 69.94%;
+      margin: 0 auto;
+      padding-bottom: 31.3125rem;
+      padding-top: 19.4375rem;
+      height: 10.5rem !important;
+      .item_m {
+        /*margin-top: 3.125rem;*/
+
+      }
+      .item {
+        width: 46.81%;
+        height:calc(100vw / 1680 * 168);
+        //height: 10.5rem !important;
+        line-height: calc(100vw / 1680 * 168);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.0625rem solid #dadada;
+        color: #808080;
+        &:nth-child(1) {
+          float: left;
+        }
+        &:nth-child(2) {
+          float: right;
+        }
+        .img {
+          float: left;
+          // flex: 1;
+          width: 32.55%;
+          text-align: right;
+          img {
+            width: calc(100vw / 1680 * 58);
+            height: calc(100vw / 1680 * 64);
+
+            cursor: pointer;
+          }
+        }
+        .text {
+          float: left;
+          margin-left: 12.57%;
+          // text-align: center;
+          line-height: 12.5rem;
+          flex: 2;
+          // font-size: 1.375rem;
+          font-size: calc(100vw / 1680 * 26);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

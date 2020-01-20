@@ -1,0 +1,239 @@
+$primary-color: #d81f49;
+$state-color: #d41144;
+$nextbtn-color: #d72049;
+$primary-transparent:rgba(216, 31, 73, 0.9);
+
+.pxborder {
+  position: relative;
+}
+
+.pxborder:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  height: 0.125rem;
+  border-bottom: 0.0625rem solid #e8e8e8;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  line-height: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  /* 移动端可以省略 */
+  zoom: 1;
+}
+
+.ant-select-selection {
+
+  border: 0.0625rem solid #757575;
+}
+
+.ant-select-focused .ant-select-selection {
+  border: 0.0625rem solid #e64565;
+}
+
+// .fl {
+//   float: left;
+// }
+
+// .fr {
+//   float: right;
+// }
+
+body {
+  .ant-menu-submenu {
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+
+    .ant-menu {
+      z-index: 9999;
+      color: #fff !important;
+      box-shadow: none !important;
+      background-color: transparent !important;
+    }
+  }
+
+  .ant-menu-submenu-popup {
+    z-index: 9999;
+    background: transparent !important;
+  }
+}
+
+// ::-webkit-scrollbar {
+//   width: 0rem;
+//   height: 0.625rem;
+//   background-color: #3c3c3c;
+// }
+.has-error .ant-input:not([disabled]):hover {
+  border-color: transparent;
+}
+.weui-dialog__ft:after{
+  border-top: 0;
+}
+.weui-dialog__btn{
+  // background: #d81f49;
+  // color: #fff !important;
+  max-width: 12.5rem !important;
+  border-radius: 3.125rem;
+  margin-left: 50%;
+  height: 2.625rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -0.625rem;
+  justify-content: center;
+  transform: translateX(-50%);
+  border: 0.0625rem solid currentColor;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+}
+.vux-confirm{
+  .weui-dialog__ft{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 0;
+  }
+  .weui-dialog__btn_default{
+    margin-right: 1.25rem;
+    border: 0.0625rem solid #d81f49;
+    color: #d81f49;
+  }
+  .weui-dialog__btn{
+    margin-left: 0rem;
+    transform: none
+  }
+  .weui-dialog__btn:after{
+    border-left: none;
+  }
+}
+
+@function px($n, $a: 1) {
+  @if $a == 1 {
+    @return $n * 0.03125rem;
+    // @return $n * 0.0625rem;
+    // @return px2rem($n * 1px);
+  } @else {
+    @return $n * 1rem;
+  }
+}
+.vux-spinner svg{
+  fill: #d81f49 !important;
+}
+.weui-dialog__hd{
+  margin-top: 2.5rem;
+}
+.weui-dialog__bd{
+  color: #161616;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.weui-dialog__ft{
+  margin-bottom: 2.5rem;
+}
+// border
+.haveFoot {
+  padding-bottom: px(98);
+}
+.pxborder {
+  position: relative;
+}
+.pxborder:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200%;
+  height: 0.125rem;
+  border-bottom: 0.0625rem solid #dadada;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.someTab .vux-tab-ink-bar{
+ background-color: #d81f49 !important;
+}
+.vux-tab-bar-inner{
+ background-color: #d81f49 !important;
+}
+
+.vux-tab .vux-tab-item.vux-tab-selected {
+  font-size: 1.0625rem;
+  font-weight: bold;
+  font-color: #d81f49 !important;
+}
+.weui-dialog__btn_primary {
+  margin-top: 0.875rem;
+  color: #d81f49 !important;
+}
+.swiper-container4 .swiper-pagination-bullet {
+  background-color: #d8d8d8 !important;
+  opacity: 1 !important;
+}
+
+.swiper-container4 .swiper-pagination-bullet-active {
+  font-color: #d81f49 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+ font-color: #d81f49;
+}
+
+/deep/.otherP{
+  left: 50% !important;
+  bottom: 0.875rem !important;
+  transform: translateX(-50%);
+}
+.comBtn{
+  font-color: #d81f49 !important;
+  width:100%;
+  height:3.1875rem;
+  border-radius:3.1875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.weui-cell{
+  background: transparent !important
+}
+
+.mint-toast-text{
+  font-family: Microsoft JhengHei  !important;
+}

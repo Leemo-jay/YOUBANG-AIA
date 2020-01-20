@@ -1,0 +1,190 @@
+@Charset "UTF-8";
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  font-family: "Noto Sans TC", "Microsoft JhengHei"; }
+  body header {
+    position: relative;
+    padding-top: 10em; }
+    body header .banner {
+      width: 100%; }
+    body header .AIA_logo {
+      min-width: 200px;
+      width: 15%;
+      position: absolute;
+      top: 15%;
+      left: 17%; }
+      body header .AIA_logo img {
+        width: 100%; }
+    body header div {
+      position: absolute;
+      top: 32%;
+      left: 10%; }
+      body header div h1 {
+        color: #1F1F1F;
+        font-size: 45px;
+        font-weight: 500;
+        letter-spacing: 1.46px;
+        line-height: 1.4;
+        text-align: center; }
+      body header div p {
+        color: #7A7A7A;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 0.91px;
+        line-height: 1.4; }
+  body section {
+    padding: 4em 15%; }
+    body section img {
+      width: 100%; }
+    body section p {
+      color: #3A3A3A;
+      font-size: 20px;
+      letter-spacing: 0.65px;
+      line-height: 1.4;
+      text-align: justify; }
+      body section p.desc {
+        font-weight: 500;
+        margin: 0 5% 2em; }
+    body section .item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 2em 0;
+      padding: 0 5%; }
+      body section .item img {
+        width: 20%; }
+      body section .item p {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 20% - 2em - 5px); }
+      body section .item:nth-of-type(even) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+    body section .btns {
+      text-align: center;
+      margin: 3em -15% 0; }
+      body section .btns a {
+        width: 10em;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
+        letter-spacing: 4px;
+        line-height: 1.4;
+        color: #D71F4A;
+        border: 1px solid #D71F4A;
+        border-radius: 30px;
+        background-color: #FFFFFF;
+        text-align: center;
+        padding: 0.7em calc(0.5em - 4px) 0.7em 0.7em; }
+        body section .btns a:hover {
+          cursor: pointer;
+          color: #FFFFFF;
+          background-color: #D71F4A; }
+        body section .btns a:not(:nth-of-type(1)) {
+          margin-left: 1em; }
+  body img.desktop {
+    display: block; }
+  body img.mobile {
+    display: none; }
+
+@media (min-width: 768px) and (max-width: 820px) {
+  body header .AIA_logo {
+    width: 20%; }
+  body header div {
+    top: 35%; }
+    body header div h1 {
+      font-size: 40px; }
+    body header div p {
+      font-size: 26px; }
+  body section .btns a {
+    margin-bottom: 0.5em; }
+    body section .btns a:not(:nth-of-type(1)) {
+      margin-left: 0.5em; } }
+
+@media (max-width: 767px) {
+  body header {
+    min-height: 250px;
+    overflow: hidden;
+    padding-top: 9em; }
+    body header .banner {
+      position: absolute;
+      right: -2em;
+      bottom: 0;
+      top: 0;
+      height: 250px;
+      width: auto;
+      margin: 9em auto 0; }
+    body header .AIA_logo {
+      top: 1em;
+      left: 5%;
+      min-width: 120px;
+      width: 20%; }
+    body header div {
+      top: 4em;
+      left: 0;
+      right: 0; }
+      body header div h1 {
+        font-size: 30px; }
+      body header div p {
+        font-size: 20px; }
+  body section {
+    padding: 3em 10%; }
+    body section p {
+      font-size: 16px; }
+      body section p.desc {
+        margin: 0 0 2em; }
+    body section .item {
+      padding: 0; }
+    body section .btns {
+      margin: 3em 0 0; }
+      body section .btns a {
+        width: 100%;
+        margin: 0 0 1em;
+        padding: 0.7em 0; }
+        body section .btns a:not(:nth-of-type(1)) {
+          margin-left: 0; }
+  body img.desktop {
+    display: none; }
+  body img.mobile {
+    display: block; } }
+
+@media (max-width: 469px) {
+  body header {
+    min-height: 180px;
+    padding-top: 7em; }
+    body header .banner {
+      height: 180px;
+      margin: 7em auto 0; }
+    body header .AIA_logo {
+      min-width: 100px; }
+    body header div {
+      top: 3.5em; }
+      body header div h1 {
+        font-size: 24px;
+        letter-spacing: 0.68px; }
+      body header div p {
+        font-size: 18px; }
+  body section {
+    padding: 2em 5%; }
+    body section p {
+      font-size: 15px;
+      line-height: 145% }
+    body section .item p {
+      width: calc(100% - 20% - 1em - 5px); }
+    body section .btns a {
+      margin: 0 0 0.5em; } }

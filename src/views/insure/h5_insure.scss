@@ -1,0 +1,1035 @@
+
+@media screen and (max-width:1023px) {
+  // html {
+  //   font-size: 16px!important;
+  // }
+
+
+  /deep/ .ant-form-item-label {
+    // background: red;
+    &::after {
+      content: '';
+      padding: 0;
+
+    }
+    label {
+      font-size: 1.25rem !important;
+      color: #3a3a3a;
+
+      &::after {
+         content: '';
+      padding: 0;
+      margin: 0;
+        // margin: 0 0.5rem 0 0.5rem !important;
+      }
+    }
+  }
+
+
+
+
+
+  .HOmeDiv {
+    display: none;
+  }
+  .fixed-side {
+    display: none;
+  }
+  /deep/.fixed-header {
+    display: none!important;
+  }
+  .insurefooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+    background-color: #fff;
+    height: 3.3125rem;
+    padding: 0;
+    div {
+
+      box-shadow: 0 0 .625rem 0 #dcdcdc;
+      height: 3.3125rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 40rem;
+      margin:0 auto ;
+      .prebtn {
+        margin-right: .5rem!important;
+      } 
+      .price {
+        float: left;
+        font-size: .8125rem;
+        margin:0 1rem 0 1.0625rem;
+        .pricemount {
+          font-size:1rem
+        }
+      }
+      .ant-btn  {
+        width: 5.375rem;
+        height: 2.0625rem;
+        font-size: 0.75rem;
+        line-height: 2.0625rem;
+        font-weight: 400;
+        margin-right: 0.9375rem;
+        box-shadow: none;
+      }
+    }
+  }
+  .rightDiv {
+    margin: 0;
+    .insure {
+      margin: 0 auto;
+      .insuretab1 {
+        margin: 0;
+      }
+    }
+  }
+  .commselectBox {
+    /deep/.ant-select-selection {
+      height: 2.5rem!important;
+    }
+  }
+}
+@media screen and (max-width:1023px){
+ 
+
+
+  .h5_step {
+    display: block !important;
+  }
+  .rightDiv {
+    margin: 0!important;
+    margin-top: 6.5625rem!important;
+    padding-bottom: 0;
+    .insure {
+      margin: 0 auto;
+      padding: 1.375rem;
+      padding-top: 0.6875rem;
+      max-width: 40rem;
+      width: auto;
+      .header {
+        padding-top: 1.1rem;
+        margin-bottom:.8rem!important;
+        span {
+          line-height: 2.125rem;
+
+        }
+
+
+      }
+      #insuretab1{
+        width: 100%!important;
+        .coin {
+          font-size: 0.75rem;
+        }
+        #stepOne-select {
+          .form_info {
+              /deep/ .lis{
+                  /deep/  &:nth-child(2){
+                      .ant-row .ant-form-item-label {
+                          label{
+                            font-size: 0.9375rem!important;
+                          }
+                        }
+                        .ant-form-item-control-wrapper{
+                            /deep/.commselectBox {
+                              .ant-select-selection{
+                                height: 2.5rem;
+                                border: 1px solid #606060!important;
+                              }
+                            } 
+                        }
+                    }
+                  }
+                }
+          }
+        .ant-row .ant-form-item-label label {
+          font-size: 0.9375rem;
+        }
+        #infromFactors{
+          .searchBntbox {   //职业收益按钮
+            top: 4.3rem;
+          }
+          .infromFactors{
+           /deep/ .form {
+             .other {
+
+              .addbtn {
+                display: block;
+                margin: 0 auto;
+                margin-left: 3.0625rem;
+                width: 8.8125rem;
+                height: 2.0625rem;
+                line-height: 2.0625rem;
+                font-size: 1rem;
+                border: 1px solid #d81f49;
+                img {
+                  width: .6rem!important;
+                  margin-top: -.5rem;
+                }
+                .o_btn {
+                  line-height: 1.95rem;
+
+                  font-size: .875rem;
+                }
+              } 
+             }
+             .form_info {
+                .lis {
+                  &:nth-child(4) {
+                    .mt10 {
+                      margin-top: 0;
+                    }
+                  }
+                  &:nth-child(5) { //新增职业
+                    margin-top: .3rem!important;
+                    margin-bottom: 1.5625rem;
+                  }
+                  &:nth-child(6),&:nth-child(7) { 
+                    .linefeeditem {
+                      .ant-form-item-label {
+                        width: auto;
+                        label {
+                          font-size: .9375rem!important;
+                        }
+                      }
+                    }
+                  }
+                  &:nth-child(6)  {
+                    margin-top: -1.5rem;
+                  }
+                  &:nth-child(7)  {
+                    margin-top: -2rem;
+                    margin-bottom: 1.8rem;
+                  }
+                  &:nth-child(2) {
+                      margin-top: 3.5rem;
+                      .linefeeditem {
+                        .ant-form-item-control-wrapper{
+                          .commentBox {
+                            width: 14.25rem;
+                            margin-left: 19%;
+                          }
+                          .ant-form-explain {
+                            display: none;
+                          }
+                        }
+                        .ant-form-item-label {
+                          position: absolute;
+                        }
+                      }
+                  }
+                  &:nth-child(5) {
+                    .search {
+                      .searchBtn{
+                        min-width: 6.25rem;
+                        top: -8.8875rem;
+                        left:auto;
+                        right: 0;
+                        &::after {
+                          content: '搜尋職業';
+                          min-width: 3.75rem;
+                          padding-left: 0.125rem;
+                          font-size: 0.875rem;
+                          color: #606060;
+                          border-bottom: 1px solid #606060;
+                        }
+                        svg {
+                          height: 1rem;
+                          color: #606060;
+                          
+                        }
+                      }
+                    }
+                    .linefeeditem {
+                      .ant-form-item-control-wrapper {
+                        .ant-form-item-control {
+                          .ant-form-explain {
+                            display: none;
+                          }
+                          .other {
+                            .commentBox {
+                            position: relative;
+                            margin-top: 1.875rem;
+
+                            .fl {
+                              .ant-select-selection{
+                                height: 2.25rem;
+                              }
+                              &:nth-child(1) {
+                               width: 5rem!important;
+                               
+                               .label {
+                                 font-size: 0.9375rem!important;
+                               }
+                               .deleteIcon {
+                                 width: 1.875rem;
+                                 height: 1.875rem;
+                                 line-height: 1.875rem
+                               }
+                               position: absolute;
+                               display: flex;
+                               align-items: baseline;
+                              }
+                              &:nth-child(2) {
+                                margin-top: 0!important;
+                                margin-right: 0!important;
+                                position: absolute;
+                                width: 65%!important;
+                                right: 0;
+                                height: 2.25rem;
+                                div {
+                                  font-size: .875rem;
+                                  line-height: 2.25rem;
+                                  .ant-select-arrow {
+                                    margin-top:-.3rem;
+                                    font-size: .93rem!important;
+                                    svg {
+                                      font-size: .93rem!important;
+                                    }
+                                  }
+                                  .ant-select-selection__placeholder {
+                                    margin-top: 0;
+                                    line-height: 0.9375rem;
+                                    top: 0;
+                                    height: 2.25rem;
+                                    line-height: 2.25rem;
+                                  }
+                                }
+                              }
+                              &:nth-child(3) {
+                                position: absolute;
+                                width: 65%!important;
+                                right: 0;
+                                height: 2.25rem;
+                                margin-top: .65rem;
+                                top: 2.8rem;
+
+                                div {
+                                  font-size: .875rem;
+                                  line-height: 2.25rem;
+                                  .ant-select-arrow {
+                                    margin-top:-.3rem;
+                                    font-size: .93rem!important;
+                                  }
+                                  .ant-select-selection__placeholder {
+                                    // line-height: 0.9375rem;
+                                    margin-top: 0;
+                                    line-height: 0.9375rem;
+                                    top: 0;
+                                    height: 2.25rem;
+                                    line-height: 2.25rem;
+                                  }
+
+                                }
+                              }
+                              &:nth-child(4) {
+                                position: absolute;
+                                width: 65%!important;
+                                right: 0;
+                                height: 2.25rem;
+
+                                top: 5.3625rem;
+                                div {
+                                  width: 100%!important;
+                                  font-size: .875rem;
+                                  line-height: 2.25rem;
+                                  .ant-select-arrow {
+                                    margin-top:-.3rem;
+
+                                    font-size: .93rem!important;
+                                  }
+                                  .ant-select-selection__placeholder {
+                                    margin-top: 0;
+                                    line-height: 0.9375rem;
+                                    top: 0;
+                                    height: 2.25rem;
+                                    line-height: 2.25rem;
+                                  }
+                                }
+                              }
+                              float: none;
+                              .search {
+                                width: 100%!important;
+                              }
+
+                            }
+                            height: 9.375rem;
+                          }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .searchBntbox {
+              img {
+                margin-right: 0.3125rem;
+                width: 1rem!important;
+              }
+              .searchBtn {
+                svg{
+                  height: 1.125rem;
+                  
+                }
+              }
+              span {
+                font-size: 0.875rem;
+                border-bottom: 1px solid #606060;
+              }
+            } 
+          }
+
+
+         /deep/ .form {
+          .linefeeditem {
+            .ant-form-item-label {
+              width: 4.375rem;
+            }
+            .ant-form-item-control-wrapper{
+              display: inline-block;
+              .main {
+               .commentBox  #select_vocation {
+                  width: 14.25rem!important;
+                  height: 2.25rem;
+                  float: right;
+                  margin-bottom: 1.1125rem;
+                  &:nth-child(3) {
+                    margin-top: 0!important;
+                    margin-bottom: .2rem!important;
+                    .fl {
+                      width: 14.25rem!important;
+                    }
+                  }
+                  .ant-select{
+                    height: 2.25rem;
+                    .ant-select-selection {
+                      height: 2.25rem;
+                      border: 1px solid #606060;
+                      .ant-select-selection__rendered {
+                        margin-left: 0;
+                        height: 2.25rem;
+                        line-height: 2.25rem;
+                        .ant-select-selection__placeholder{
+                          margin-top: 0;
+                          padding: 0 1.25rem 0 0.6875rem;
+                          font-size: .875rem;
+                          height: 2.25rem;
+                          line-height: 2.25rem;
+                          top:0;
+                        } 
+                      }
+                      .ant-select-arrow {
+                        margin-top:-.37rem;
+                        font-size: .93rem!important;
+                      }
+                      .ant-select-selection-selected-value{
+                        padding-left: 0.6875rem;
+                        height:2.25rem;
+                        line-height: 2.25rem;
+                        font-size: .875rem;
+                      }
+                    }
+                  }
+                }
+                .fl:nth-child(3) {
+                  margin-top: 0;
+                  margin-bottom: 0;
+                  width:100%!important
+                }
+                .fl:nth-child(1) {
+                  margin-right: 0!important;
+                }
+              }
+            }
+          }
+            .itemtip{
+              font-size: 0.75rem;
+              line-height: 1.2rem;
+            }
+          }
+        }
+      }
+
+      .insureitem {
+        
+       &:last-child {
+         padding-bottom: 0;
+         margin-top: -0.1875rem;
+         margin-bottom: 2.625rem;
+         .info {
+         margin-top: -1.2rem;
+           
+          /deep/ .lis {
+            &:nth-child(1) {
+
+               .linelabelitem {
+                  .ant-form-item-control-wrapper {
+                  min-width: 64%;
+                  .ant-form-item-control {
+                    line-height: .5rem;
+                    .ant-form-item-children{
+                      span {
+                        display: block;
+                        line-height: 1.4rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+             &:nth-child(2) {
+               margin-top: -.3rem;
+               .lineitem {
+                 margin-bottom: 1.25rem;
+                 .ant-form-item-label {
+                   height: 2.5rem;
+                   line-height: 2.5rem;
+                   padding-top:0;
+                   width: 5rem!important;
+                   label {
+                    font-size: .9375rem!important;
+                    font-weight: 400;
+                   }
+                 }
+                .ant-form-item-control-wrapper {
+                  width: 60%;
+                  height: 2.25rem;
+                  .ant-form-item-control {
+                    height: 2.25rem;
+
+                  }
+                  .commselectBox {
+                    max-width: 100%!important;
+                    height: 2.25rem;
+                    .ant-select-selection {
+                      height: 2.25rem!important;
+                      width: 12.25rem;
+                      line-height: 2.25rem;
+                    }
+
+                  }
+                  .ant-select-selection__rendered {
+                    height: 2.25rem;
+                    line-height: 2.25rem!important;
+                    font-size: .875rem;
+                  }
+                  .ant-select-arrow{
+                    top:.88rem!important
+                  }
+                }
+               }
+             }
+             &:nth-child(3) {
+               margin-top: -.6rem;
+               .ant-form-item-control-wrapper {
+                 .ant-form-item-control {
+                   .ant-form-item-children {
+                     display: block;
+                     line-height: 2.1rem;
+                   }
+                 }
+               }
+             }
+           }
+         }
+       }
+       
+      /deep/  .form {
+       .ant-form-item {
+          .ant-form-explain {
+            font-size: 0.75rem;
+          }
+          .inputBox {
+            .afterunit {
+              font-size: 0.875rem;
+            }
+           .bgTest{
+             width:15.125rem ;
+           }
+           .ant-input{
+             width:15.125rem ;
+             font-size: .875rem!important;
+             height: 100%;
+             border-bottom: .0625rem solid #e4e4e4;
+             padding-bottom: 0;
+             &::placeholder {
+              font-size: .875rem!important;
+              line-height: 1.4rem;
+
+             }
+           }
+           .bgError,.bgTest {
+             margin-top: -.35rem!important;
+             width: 15.125rem;
+             &::before{
+               height: .0625rem;
+               top: .0625rem;
+
+             }
+           }
+           .tip {
+            font-size: 0.75rem;
+            margin-top: .1875rem;
+          }
+          }
+       }
+          .form_info{
+            .lis{
+              .linelabelitem {
+                /deep/.ant-form-item-label {
+                  .ant-form-item-required{
+                    font-size: 0.9375rem;
+                  }
+                  label{
+                    font-size: .9375rem!important;
+                  }
+                }
+                .ant-form-item-control-wrapper {
+                  .ant-form-item-control {
+                    .ant-form-item-children {
+                      span{
+                        font-size: 0.9375rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
+        }
+      }
+      .header span {
+        font-size: 1.375rem!important;
+        font-weight: 600;
+        border-bottom: .0625rem solid #3a3a3a;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1023px){
+  .rightDiv {
+    .insure {
+      .step_one {
+        #infromFactors  {
+          .header {
+            padding-top: 3.3rem;
+          }
+          .infromFactors {
+           /deep/ .form {
+              .form_info {
+                .lis{
+                  &:nth-child(2) {
+                    .ant-form-item-label {
+                      top: 0;
+                      .ant-form-item-required {
+                        font-size: 0.9375rem!important;
+                      }
+                    } 
+                    .ant-form-item-control-wrapper {
+                      .ant-select {
+                        .ant-select-selection {
+                          font-weight: 400;
+                          border:.0625rem solid #727272 !important
+                        }
+                      }
+                    } 
+                  }
+                }
+              }
+            }
+          }
+          .searchBntbox {
+            top: 4.3375rem!important;
+          }
+        }
+      }
+    }
+  } 
+  .step_one {
+.insureitem{
+  .questionList{
+    margin-top: .5rem;
+   /deep/ &>div {
+      padding: 1.25rem 0 1.1rem 0;
+    }
+    /deep/ &>div:first-child{
+      padding-top: 0;
+    }
+    /deep/ .radio {
+      margin-top: 1.3rem;
+      .ant-radio-button-wrapper:first-child {
+        margin-right: 1.25rem!important;
+      }
+       label {
+         width: 8rem;
+         height: 2.25rem!important;
+         font-size: 0.875rem;
+         line-height: 2.25rem;
+         
+       }
+     }
+     /deep/ .question {
+         font-size: 0.9375rem;
+         p {
+           line-height: 1.575rem!important;
+           padding-left: 2.8rem!important;
+           text-indent: -.875rem!important;
+
+         }
+         /deep/ &>p:first-child {
+         padding-left: 1.875rem!important;
+
+           text-indent: -1.875rem!important;
+         }
+       }
+     } 
+    &:nth-child(4) {
+      .form {
+       /deep/ .form_info {
+          .lis {
+          &:nth-child(1),&:nth-child(3){
+            .linelabelitem {
+              .ant-form-item-control-wrapper {
+                width: 50%;
+              }
+              .ant-form-item-label {
+                &:after {
+                  content: ":";
+                  padding: 0 0.5rem;
+                  padding-left: .4rem!important;
+                  font-size: 0.9375rem;
+                  display: inline-block;
+                }
+                label {
+                  font-size: .9375rem!important;
+                }
+                display: inline-block!important;
+                width: auto;
+              }
+            }
+            }
+          }
+        }
+      }
+    }
+  }
+    #applicatFactors {
+      width: 17.3125rem;
+        .form {
+         /deep/ .form_info {
+           margin-top: -.45rem;
+            .lis {
+              .linelabelitem {
+                margin-bottom: -0.9375rem !important;
+                .ant-form-item-label {
+                //  background-color: red;
+                  label {
+                    font-size: .9375rem!important;
+                    &::after {
+                      content: ':'!important;
+                      padding: 0!important;
+                      }
+                  }
+                }
+              }
+              .ant-row{
+                .ant-form-item-label{
+                  .ant-form-item-required {
+                    font-size: 0.9375rem!important;
+                  }
+                }
+              }  
+              /deep/ &:nth-child(6) {
+              /deep/  &>div:first-child{
+                  // background-color: red;
+                  .linefeeditem {
+                    margin-top: 1.05rem!important;
+                  }
+                }
+
+               
+                margin-top: -.5rem;
+                .ant-form-item-label {
+                  margin-bottom: 0;
+                  padding-bottom: 0!important;
+                }
+                .ant-form-item-control-wrapper {
+                  .ant-form-item-control {
+                    margin-bottom: .44rem!important;
+                  }
+                }
+
+              }
+             &:nth-child(7),&:nth-child(8) {
+                margin-top: -1.7625rem;
+                .ant-form-item-control-wrapper {
+                  .ant-form-item-control {
+                    margin-bottom: .44rem!important;
+                  }
+                }
+              }
+
+              &:nth-child(1),&:nth-child(4),&:nth-child(5) {
+                margin-bottom: -1.15rem;
+                .linelabelitem {
+                  .ant-form-item-control-wrapper {
+                    width: 50%;
+                  }
+                  .ant-form-item-label {
+                    &:after {
+                      content: ":";
+                      padding: 0 0.5rem;
+                      padding-left: 0.4rem!important;
+                      font-size: 0.9375rem;
+                      display: inline-block;
+                    }
+                    display: inline-block!important;
+                    width: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+    }
+    #otherInfroms {
+      margin-top: -0.125rem
+    }
+    #infromFactors {
+      width: 17.2625rem;
+      margin-top: -1.875rem;
+      .infromFactors {
+        margin-top:-.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:575px) and (max-width:834px) {
+.step_one{
+  .insureitem:nth-child(4) {
+   /deep/ .form{
+      .form_info{
+        .lis:nth-child(1),.lis:nth-child(3) {
+          .linelabelitem{
+            // .ant-form-item-label:after{
+            //   display: none;
+            // }
+          }
+        }
+      }
+    }  
+  }
+ 
+  #applicatFactors {
+    .form {
+     /deep/ .form_info {
+        .lis:nth-child(1),.lis:nth-child(4),.lis:nth-child(5){
+          .linelabelitem {
+            // .ant-form-item-label:after  {
+            //   display: none;
+            // }
+          }
+        }
+      }
+    }
+  }
+} 
+}
+
+
+
+
+
+//step_two
+@media screen and (max-width:1023px) {
+  .content {
+    .rightDiv {
+
+      .insure {
+        .step_two {
+          .footerphone {
+            font-size: .875rem!important;
+          }
+          .footerlasttip {
+            font-size: .75rem!important;
+            line-height: normal;
+          }
+          .insureitem {
+            .footertip {
+              margin-bottom: 1.25rem!important;
+              font-size: .75rem!important;
+              line-height: normal;
+            }
+           
+            .addbtn {
+              border: .0625rem solid #d81f49;
+              width: 12.125rem;
+              line-height: 2.0625rem;
+              height: 2.0625rem;
+              img {
+                vertical-align: baseline;
+              }
+              .o_btn {
+                font-size: .875rem;
+                line-height: 2.0625rem;
+
+
+              }
+            }
+            .benefiBox  {
+              padding: 0;
+              width: 20rem;
+              margin-left: -1.375rem;
+              .benefiCon {
+                width: 19.8rem;
+                padding: 1.275rem;
+               .form {
+               
+                  /deep/  .form_info {
+                    .lis{
+                      .commselectBox {
+                        .ant-select-selection{
+                            height: 2.25rem;
+                            line-height: 2.25rem;
+                          .ant-select-selection__rendered {
+                            height: 2.25rem;
+                            line-height: 2.25rem;
+                            .ant-select-selection__placeholder {
+                              font-size: .875rem;
+                            }
+                            .ant-select-selection-selected-value {
+                              font-size: .875rem;
+                            }
+    
+                          }
+                        } 
+                      }
+                        &:nth-child(1) {
+                          .ant-form-item-label {
+                            margin-right: .4rem;
+                          }
+                          .ant-form-item-control-wrapper{
+                            width:9.8125rem !important;
+                            .commselectBox {
+                              width:9.8125rem !important;
+
+                              .ant-select-selection {
+                                width: 9.8125rem!important;
+                                height: 2.25rem;
+                                line-height: 2.25rem;
+      
+                              }
+                            }
+                           
+                          }
+                        }
+                       
+                      }
+                    }
+                  }
+          /deep/  .form:nth-of-type(1){
+              .form_info{
+                  .lis {
+                    &:nth-of-type(3){
+                      .linefeeditem {
+                        .ant-form-item-control-wrapper {
+                          .commentBox  {
+                            .searchCountry {
+                              right: 0;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .form:nth-of-type(3) {
+                /deep/ .form_info {
+                  .lis {
+                    .switch {
+                      .lb,.left {
+                        border: .0625rem solid #ccc;
+                      }
+                      .rb {
+                        border: .0625rem solid  #d81f49 ;
+                      }
+                      .lb,.rb {
+                        width: 11rem;
+                        height: 2.0625rem;
+                        line-height: 1.7625rem!important;
+                        
+                        .left,.right  {
+                          width: 1.1875rem;
+                          height: 1.1875rem;
+                          top: .35rem;
+                        }
+                        .text {
+                          margin-left: 1.8rem;
+                          font-size: .875rem;
+                          line-height: .6875rem!important;
+
+                        }
+
+                      }
+    
+                    }
+                  }
+                }
+               
+              }
+           /deep/ .form:nth-of-type(4) {
+              /deep/ .form_info {
+                .lis {
+                  &:nth-child(1) {
+                    .linefeeditem {
+                      .ant-form-item-control-wrapper {
+                        width: 100%!important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+            .form {
+             /deep/ .form_info {
+                .linefeeditem {
+                  .ant-form-item-label {
+                    label {
+                      font-size: .9375rem!important;
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-child(1) {
+              .two_info {
+                margin-bottom: 0;
+                .insurelable {
+                  font-size: .9375rem;
+                }
+              }
+            }
+            &:nth-child(2) {
+              /deep/.form {
+                .form_info {
+                  margin-top: 1.4375rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

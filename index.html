@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta ref="altmate" hreflang="zh-TW" href="https://yonii.aia.com.tw">
+  <meta name="keywords" Content="">
+  <meta name="description" Content="">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+  <title>AIA 友邦人壽網路投保</title>
+  <script src="/rwd/static/CONFIG.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/rwd/static/content/content.js"></script>
+  <script src="/rwd/static/content/jquery-3.2.1.min.js"></script>
+</head>
+<script src="//assets.adobedtm.com/launch-ENe0edc9704e1c452792f2655d3ad81ea1.min.js" async></script>
+<script>
+  function IEVersion() {
+    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+    var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+    var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; //判断是否IE的Edge浏览器
+    var isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf("rv:11.0") > -1;
+    if (isIE) {
+      var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+      reIE.test(userAgent);
+      var fIEVersion = parseFloat(RegExp["$1"]);
+      if (fIEVersion == 7) {
+        return 7;
+      } else if (fIEVersion == 8) {
+        return 8;
+      } else if (fIEVersion == 9) {
+        return 9;
+      } else if (fIEVersion == 10) {
+        return 10;
+      } else {
+        return 6; //IE版本<=7
+      }
+    } else if (isEdge) {
+      return 'edge'; //edge
+    } else if (isIE11) {
+      return 11; //IE11
+    } else {
+      return -1; //不是ie浏览器
+    }
+  }
+  window.onload = function () {
+    console.error(IEVersion());
+    var num = IEVersion();
+   /* if (num < 9 && num > 0) {
+      alert('您好，為了提供最佳的網站服務，本網站不再支援IE9、FireFox67、Chrome74以下的瀏覽器版本，請您依個人使用習慣，進行瀏覽器更新，謝謝。');
+    }*/
+  };
+  // window.onbeforeunload = function () //author: meizz
+  // {
+  //   var n = window.event.screenX - window.screenLeft;
+  //   var b = n > document.documentElement.scrollWidth - 20;
+  //   if (b && window.event.clientY < 0 || window.event.altKey) {
+  //     alert("是关闭而非刷新");
+  //     window.event.returnValue = "123"; //这里可以放置你想做的操作代码
+  //   } else {
+  //     alert("是刷新")
+  //     window.event.returnValue = "456"; //这里可以放置你想做的操作代码
+  //   }
+  // }
+
+</script>
+
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<script>
+  var Head = document.getElementsByTagName('head')[0]
+  var linkCSS = document.createElement("link");
+  linkCSS.type = "text/" + ("css");
+  linkCSS.rel = "stylesheet";
+  var CSSPATH = '/rwd/static/Calendar/ios.css'
+  linkCSS.href = (navigator.userAgent.indexOf('Android') > -1 || navigator.userAgent.indexOf('Linux') > -1) ? '/rwd/static/Calendar/android.css' : '/rwd/static/Calendar/ios.css';
+  // alert(linkCSS.href)
+  Head.insertBefore(linkCSS,Head.lastChild)
+  //
+</script>
+</html>

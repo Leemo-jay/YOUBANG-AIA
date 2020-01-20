@@ -1,0 +1,225 @@
+@media only screen and (min-width: 1024px) {
+  .footertip {
+    padding: calc(100vw / 1680 * 60) 0 calc(100vw / 1680 * 63)!important;
+    margin: 0!important;
+  }
+  .legaltip {
+    padding-left: calc(100vw / 1680 * 15);
+    margin: calc(100vw / 1680 * 15) 0 0;
+  }
+  .contentBox {
+    width: calc(100vw / 1680 * 1021);
+    margin: 0 auto;
+    padding-top: 5.125rem;
+    padding-bottom: calc(100vw / 1680 * 85);
+
+    .insurecontentBox {
+      width: 100%;
+      padding-top: calc(100vw / 1680 * 32);
+
+      .insurecontent {
+        padding-top: calc(100vw / 1680 * 93);
+        position: relative;
+
+        .coin {
+          font-size: calc(100vw / 1680 * 20);
+          position: absolute;
+          top: calc(100vw / 1680 * 93);
+          right: 0;
+          ;
+          color: #161616;
+        }
+
+        .contitle {
+          // height: 2.5rem;
+          padding-bottom: calc(100vw / 1680 * 9) !important;
+          line-height: calc(100vw / 1680 * 25);
+          border-bottom: calc(100vw / 1680 * 1.5) solid #D3D3D3;
+          color: #3A3A3A;
+          font-weight: 600;
+          font-size: calc(100vw / 1024 * 16);
+        }
+
+        span {
+          font-size: calc(100vw / 1680 * 20);
+        }
+        .policyBox {
+          margin-top: calc(100vw / 1024 * 9);
+        }
+        .policycontent {
+          line-height: calc(100vw / 1680 * 78);
+        }
+        .policy_content {
+          padding-left: calc(100vw / 1680 * 127);
+        }
+
+      }
+    }
+  }
+
+  // --------隐藏h5样式
+  .h5detail {
+    display: none;
+  }
+
+  .left {
+    font-size: calc(100vw / 1680 * 24);
+    font-weight: 600;
+    color: #6a6a6a;
+  }
+
+  .backtip {
+    font-size: calc(100vw / 1680 * 20);
+    line-height: calc(100vw / 1680 * 20)!important;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #6a6a6a;
+  }
+
+  .jump {
+    font-weight: 600;
+  }
+
+  .w100 {
+    width: 100%;
+    min-height: 4.6875vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .contentBox {
+    padding-top: 3.3125rem;
+    padding-bottom: 0;
+  }
+
+  // 隐藏样式
+  .insurecontentBox {
+    display: none;
+  }
+
+  // --------显示h5样式
+  .h5detail {
+    display: block !important;
+  }
+
+  .left {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #6a6a6a;
+  }
+
+  .backtip {
+    font-size: 1.3125rem;
+  }
+
+  .jump {
+    font-weight: 600;
+  }
+
+  .w100 {
+    width: 100%;
+    min-height: 4.6875vw;
+    height: auto;
+  }
+
+  // 新样式
+
+  .billDiv {
+    padding: calc(100vw /320 * 22.9) calc(100vw / 320 * 20) calc(100vw / 320 * 33);
+
+    .ad {
+      background: #fff;
+      margin-bottom: calc(100vw /320 * 20);
+    }
+
+    .billItem {
+
+      padding: calc(100vw /320 * 22) 0;
+      padding-top: calc(100vw /320 * 12);
+
+    }
+
+    .bigFont {
+      font-size: calc(100vw /320 * 14);
+      color: #3a3a3a;
+      margin-bottom: calc(100vw /320 * 8);
+    }
+
+    .littleFont {
+      font-size: calc(100vw /320 * 14);
+      color: #3a3a3a;
+      margin-bottom: calc(100vw /320 * 6);
+
+      .inner {
+        display: inline-block;
+        width: 49%;
+      }
+
+    }
+  }
+
+  .thisBorder {
+    margin: 0 calc(100vw /320 * 20);
+  }
+
+  .btnDiv {
+    padding: calc(100vw /320 * 14) calc(100vw /320 * 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(100vw /320 * 14);
+    color: $primary-color !important;
+
+    img {
+      width: calc(100vw /320 * 14);
+      margin-left: calc(100vw /320 * 10);
+    }
+  }
+
+  .otherTip {
+    padding-top: calc(100vw /320 * 20);
+    padding-bottom: calc(100vw /320 * 10);
+    font-size: calc(100vw /320 * 12);
+
+
+  }
+  .pxborder:before {
+    border-bottom: 1px solid #e4e4e4!important;
+  }
+  .thisTitle {
+    font-size: calc(100vw /320 * 18);
+    font-weight: bold;
+    color: #3a3a3a;
+    padding-bottom: calc(100vw /320 * 4);
+    letter-spacing: calc(100vw /320 * 1);
+    margin-top: calc(100vw /320 * 13);
+  }
+
+  .thisFont {
+    color: $primary-color !important;
+    text-decoration: underline;
+    font-size: calc(100vw /320 * 12);
+  }
+
+  .right {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  #lvqq-back {
+    display: inline-block;
+    width: calc(100vw /320 * 17.65);
+    height: calc(100vw /320 * 17.65);
+  }
+
+  #lvqq-taibi {
+    text-align: right;
+    font-size: calc(100vw /320 * 14);
+    color: rgb(106, 106, 106);
+  }
+
+}

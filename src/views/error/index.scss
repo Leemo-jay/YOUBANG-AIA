@@ -1,0 +1,26 @@
+.content{
+	// min-height: 700px;
+	height: 100%;
+  background: #fff;
+}
+.errorBox{
+	width: max-content;
+	margin: 0 auto;
+	text-align: center;
+}
+.helpIcon{
+	width: 120px;
+	margin-top: 60px;
+}
+.boldTip{
+	font-size: 22px;
+	line-height: 46px;
+	font-weight: 800;
+}
+.tip{
+	width: 260px
+}
+.phone{
+	color:$primary-color;
+	 line-height: 32px;
+}

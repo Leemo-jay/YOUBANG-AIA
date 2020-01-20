@@ -1,0 +1,503 @@
+@media  screen and (max-width: 1023px) {
+  .PCHolderClass{
+    display: none;
+  }
+  p{
+    margin: 0;
+  }
+  #vux-datetime-zdytw{
+    padding: 0;
+  }
+  .comfrom{
+    display: none;
+  }
+  .imgBase64{
+    width: 6.8125rem;
+    height: 1.9375rem;
+  }
+  .content {
+    width: 85.9375%;
+    margin: 0 auto;
+    margin-top: 3.3125rem;
+    // min-height: 56.25rem;
+    // min-height: calc(100vh - 8.625rem);  105rem
+    // min-height: calc(100vh - 9.38rem);
+    //padding-top: 12rem;
+    //padding-bottom: 12rem;
+    // height: 66.375rem;
+    background: #fff;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    //background: url('../../assets/home/Together_BG_Wave-Mobile.png') no-repeat bottom / 100%;
+    //background-position: 0 41.7rem;
+  }
+
+  .content1 {
+    //background-position: 0 33.438rem;
+  }
+
+  .loginDiv1 {
+    //width:17.1875rem;
+    //height:18.8125rem;
+
+    // top: 50%;
+    // transform: translateY(-50%) !important;
+    //width: 42.5rem;
+    //border: 0.125rem solid #dadada;
+    //padding: 1.625rem 5rem !important;
+    //top: 27rem !important;
+
+    height: auto;
+
+    .thisBtn {
+      // position: absolute;
+      //width: 20.25rem;
+      //height: 3.6875rem;
+      // left: 31%;
+      //font-size: 1.25rem;
+      color: #fff;
+    ;
+      //line-height: 3.685rem;
+    }
+    /deep/ .codeSure {
+      width: 100%;
+      margin: auto;
+      font-size: 0.9375rem;
+      border: none;
+      padding: 1.4375rem 0.875rem 1.5625rem 0.75rem;
+      color: rgb(106, 106, 106);
+      line-height:1.3125rem;
+      overflow-wrap: break-word;
+      border:0.0625rem solid rgba(218,218,218,1);
+      margin-top: 6rem;
+      .inputDiv {
+        .thisInput::placeholder {
+          color: #bebebe;
+          font-size: 0.875rem !important;
+          padding-bottom: 0.5rem !important;
+        }
+
+      }
+      .codeDiv{
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+        font-size: 0.875rem;
+        color: #3a3a3a;
+        font-weight: 700;
+      }
+      .reset {
+        img {
+          width: 0.6875rem;
+          height: 0.75rem;
+        }
+
+        color: #6a6a6a !important;
+        font-size: 1rem;
+      }
+    }
+
+  }
+
+  .loginDiv {
+    //box-shadow: 0rem 0rem 0.375rem rgba(0, 0, 0, 0.16);
+  }
+
+  .loginDiv,
+  .loginDiv1 {
+    margin: auto;
+    // position: absolute;
+    // top: 11.9375rem;
+    // top: 50%;
+    // transform: translateX(-50%);
+    // transform: translateY(-50%);
+    //width: 42.5rem;
+    border-radius: 3.125rem;
+    //padding: 4.0625rem 5.625rem;
+    height: auto;
+
+    .bigFont {
+      color: #161616;
+      font-size: 1.375rem;
+      margin: 5.125rem 0 0 0;
+      font-weight: bold;
+      //padding-left: 1.625rem;
+      //padding-right: 0.25rem;
+      //margin-bottom: 1.25rem;
+    }
+
+    .littleFont {
+      margin-top: 0.25rem;
+      color: #3a3a3a;
+      font-weight: 400;
+      margin-bottom: 0.625rem;
+      font-size: 1rem;
+    }
+
+    .comfrom /deep/div:nth-child(2),
+    .comfrom /deep/div:nth-child(1) {
+      .rihgtThis {
+        .formInput {
+          margin-top: 1.25rem;
+          background-color: transparent;
+          padding-left: 0;
+          position: relative;
+          border: none;
+          font-size: 0.875rem;
+          height: 2rem;
+          color: #161616;
+          outline: 0;
+          -webkit-opacity: 1;
+          box-sizing: border-box;
+          width: 85%;
+          border-bottom: 0.0625rem solid #e4e4e4;
+          border-radius: 0;
+          -webkit-appearance: none;
+          font-family: Microsoft JhengHei!important;
+        }
+      }
+    }
+
+    .comfrom /deep/div:nth-child(2) {
+      .rihgtThis {
+        .formInput::placeholder {
+          font-size: 1.125rem;
+        }
+
+      }
+    }
+
+
+    .codecontainer {
+      .name {
+        margin-top: 0.9375rem !important;
+        font-size: 1rem;
+        color: #3a3a3a;
+      }
+
+      .name::before {
+        vertical-align: top;
+      }
+
+      .codebox {
+        .codeInput {
+          border-bottom: 0.125rem solid #e4e4e4;
+        }
+        .codeInput::placeholder {
+          color: #bebebe;
+          font-size: 0.875rem !important;
+        }
+      }
+    }
+
+    // .codeInput {
+    //   border-bottom: 0.125rem solid #e4e4e4;
+    // }
+
+    .spFont {
+      color: $primary-color;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+  }
+
+  .loginDiv1 {
+    border-radius: 0;
+  }
+
+
+  /deep/ .formDiv {
+    // margin-top: 99.5rem;
+    // letter-spacing: 0.125rem;
+    .titleFont {
+      font-size: 0.875rem;
+      color: #3a3a3a;
+    }
+
+    .rihgtThis {
+      .formInput::placeholder {
+        // letter-spacing: 0.0625rem;
+      }
+
+      .dateIcon {
+        top: 2.175rem;
+        right: 2.0625rem;
+        width: 2.125rem;
+        height: 1.9375rem;
+      }
+    }
+  }
+
+  .thisBtn {
+    //width: calc(100% - 3.25rem);
+    //margin-left: 1.625rem;
+    margin-top: 2.5rem;
+    //padding-bottom: 2.5rem;
+    letter-spacing: 0.625rem;
+    text-indent: 0.625rem;
+
+
+    //position: absolute;
+    left: 20%;
+    //bottom: -8.125rem;
+    height: 2.625rem;
+    //width: 60%;
+   // margin: auto;
+    margin-top: 2.5rem;
+    //padding: 0 3.125rem;
+    font-size: 1rem;
+    line-height: 2.625rem;
+    text-align: center;
+    background-color: $nextbtn-color;
+    outline: none;
+    border-style: none;
+    border-radius: 1.875rem;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+  .bgTest {
+    // margin-top: 0.625rem;
+    // background: #e8e8e8;
+    // background: linear-gradient(90deg,#e8e8e8 0%,blue 10% ,#e8e8e8 0%);
+    // width: 85%;
+    width: 100%;
+    height: 0.0625rem;
+    margin-top: -0.0625rem;
+    position: relative;
+    // animation: deep1 4s ease-in-out infinite alternate;
+  }
+
+  .bgTest::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 100%;
+    // background: blue;
+    // background: $primary-color;
+    background: #A2B5F9;
+    // animation: deep1 1s forwards;
+  }
+
+  .bgError::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    // background: blue;
+    // background: $primary-color;
+    background: $primary-color !important;
+    animation: in 0.4s forwards;
+  }
+
+  .isfocus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    // background: blue;
+    // background: $primary-color;
+    background: #a2b5f9;
+  }
+
+  .start::before {
+    animation: in 0.4s forwards;
+  }
+
+  .end::before {
+    animation: out 0.4s forwards;
+  }
+
+  @keyframes in {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes out {
+    from {
+      width: 100%;
+    }
+
+    to {
+      width: 0%;
+    }
+  }
+  .container {
+    background: #fff;
+    .login_content {
+      position: relative;
+    }
+  }
+  .codecontainer {
+    .name {
+      font-size: 0.875rem !important;
+      &::before {
+        display: inline-block;
+        margin-top: -3px;
+        margin-right: 0.25rem;
+        content: '*';
+        font-family: 'Microsoft JhengHei' !important;
+        //line-height: 1;
+        line-height:2 !important;
+        font-size: 0.875rem;
+        color: $primary-color;
+      }
+    }
+    .codebox {
+      width: 100%;
+      margin-top: 0.3125rem;
+      // display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .code {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .code-inpbox {
+        float: left;
+        width: 7.3125rem;
+        margin-right: 0.875rem;
+        //margin-right: 0.9375rem;
+        .codeInput {
+          //height: 2rem !important;
+          font-size: 0.875rem;
+          width: 100%;
+          vertical-align: bottom;
+          margin: 0;
+          padding: 0;
+          // margin-right: 0.9375rem;
+          outline: none;
+          border: none;
+          height: 2rem !important;
+          background-color: #ffffff;
+          padding-left: 0;
+          position: relative;
+          font-size: px(28);
+          outline: 0;
+          border-bottom: 0.125rem solid #e8e8e8;
+        }
+        .bdbred {
+          border-bottom: 0.0625rem solid $primary-color !important;
+        }
+      }
+      .resetimg {
+        width: 1.25rem;
+        padding-left: 0.3125rem;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .tip {
+      color: #476195;
+      font-size: 1rem;
+      margin-top: 0.1875rem;
+      max-width: 87%;
+    }
+    .redError {
+      font-size: 0.75rem;
+      margin-top: 0.3125rem;
+      color: $primary-color;
+      padding-bottom: 0 !important;
+      .err {
+        font-size: 0.75rem;
+        vertical-align: sub;
+      }
+    }
+  }
+  .loginbtn {
+    // height: 3.125rem;
+    // width: 60%;
+    //width: 20.25rem;
+    height: 2.6875rem;
+    line-height: 2.6875rem;
+    margin: 2.625rem auto 0;
+    font-size: 1rem;
+    text-align: center;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  .postbtn {
+    // margin-top: 6.25rem;
+    //margin-top: 8.25rem;
+  }
+  .grey {
+    background: rgba(#6a6a6a, 0.3) !important;
+    color: #6a6a6a;
+  }
+  .content {
+    position: relative;
+    bottom: 0;
+    top: 0;
+  }
+  .loginDiv,
+  .loginDiv1 {
+    padding-bottom: 3.25rem;
+    z-index: 5;
+    background: #fff;
+    font-size: 1.125rem;
+    .formDiv {
+      .rihgtThis {
+        .tip {
+          font-size: 0.875rem;
+        }
+        .formInput {
+          border-bottom: 0.125rem solid #e4e4e4 !important;
+        }
+        .formInput::placeholder {
+          font-size: 1.125rem !important;
+          // padding-bottom: 0.25rem;
+          // letter-spacing: 1.125rem!important;
+        }
+      }
+      padding: 1.8125rem 0 0 0;
+      /*.weui-cell{
+        padding: 0.875rem 0 !important;
+      }*/
+    }
+    /deep/.formDiv {
+      margin: 4.5rem 0 !important;
+    }
+  }
+
+  .comfromH5 /deep/ .form-com-content{
+    .weui-cell{
+      padding: 0 !important;
+    }
+  }
+
+
+  .back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 28.3125rem;
+    width: 100%;
+    background-size: cover;
+    // background: url('../../assets/home/Together_BG_Wave-Mobile.png') no-repeat bottom / 100% 100%;
+    // background: url('../../assets/home/Together_BG_Wave-PC.png') no-repeat bottom;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}

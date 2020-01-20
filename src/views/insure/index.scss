@@ -1,0 +1,1493 @@
+// @media screen and (min-width:1024px) {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .step_two {
+      .ant-select-selection-selected-value {
+        line-height: 2.9rem !important;
+      }
+  
+      /deep/.commselectBox .ant-select-selection__rendered {
+        line-height: 2.5rem !important;
+      }
+    }
+  
+    .stepFour {
+  
+      /deep/.bank-input,
+      .bank {
+        font-size: 1rem !important
+      }
+    }
+  }
+  
+  .content {
+    background-color: #fff;
+  }
+  
+  .ant-select-selection__rendered {
+    line-height: 2.9375rem !important;
+  }
+  
+  .fixed-side {
+    position: fixed;
+    top: 12.25rem;
+    left: 0;
+    padding-left: 20.4rem;
+    transition: all 0.5s;
+    z-index: 0;
+  
+  }
+  
+  .isGrey {
+    background: rgba(#6a6a6a, 0.3) !important;
+    color: #6a6a6a;
+  }
+  
+  .inputBox .ant-input,
+  .inputBox .ant-input::placeholder {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: red!important;
+    font-family: Microsoft JhengHei !important;
+  
+    // color: #bebebe;
+    ;
+    // color:rgba(190,190,190,1);
+  }
+  
+  
+  .infromFactors {
+    position: relative;
+  
+  
+    /deep/ .itemtip {
+      margin-bottom: 2.5rem;
+      margin-top: 0;
+      // font-size:0.9375rem;
+      font-family: 'Microsoft JhengHei' !important;
+      font-weight: 400;
+      color: rgba(211, 17, 69, 1);
+      line-height: 1.875rem
+    }
+  
+    /deep/ .itemtip1,
+    .item_tips {
+      font-size: 0.9375rem;
+      font-family: 'Microsoft JhengHei' !important;
+      font-weight: 400;
+      color: rgba(211, 17, 69, 1);
+      line-height: 1.875rem;
+    }
+  
+    .item_tips {
+      font-size: 1rem;
+      font-family: 'Microsoft JhengHei' !important;
+      font-weight: 400;
+      color: rgba(211, 17, 69, 1);
+      line-height: 1.875rem;
+    }
+  
+    .searchBntbox {
+      z-index: 9;
+      position: absolute;
+      top: 6.7375rem;
+      right: 0;
+      border-bottom: none;
+      font-size: 1rem;
+      color: #606060;
+      cursor: pointer;
+  
+      .searchBtn {
+        font-size: 1.5rem;
+      }
+  
+  
+      span {
+        display: inline-block;
+        line-height: 1rem;
+        border-bottom: 0.0625rem solid #606060;
+      }
+    }
+  }
+  
+  
+  .rightDiv {
+    margin: 0 0 0 35.8125rem;
+    padding-bottom: 7.1875rem;
+    // padding-top: 5.2rem;
+  
+    // border-left: 0.0625rem solid rgba(31,31,31,0.11);
+    -webkit-box-shadow: rgba(31, 31, 31, 0.051) 0.1875rem 0 0.625rem 0.125rem inset;
+    -moz-box-shadow: rgba(31, 31, 31, 0.051) 0.1875rem 0 0.625rem 0.125rem inset;
+    box-shadow: rgba(31, 31, 31, 0.051) 0.1875rem 0 0.625rem 0.125rem inset;
+  
+  }
+  
+  .insure {
+    width: 33.875rem;
+    margin: 0 0 0 8.625rem;
+    padding: 1.875rem 0 0 0;
+    padding-top: 9.9125rem;
+  
+    .ant-select-selection__placeholder,
+    .ant-select-search__field__placeholder {
+      color: #606060 !important
+
+    }
+  }
+  
+  .insureitem {
+    .questionList {
+      /deep/.questionList {
+        // font-size: 1rem!important;
+  
+        .question {
+          line-height: 2.25rem;
+          letter-spacing: .0325rem;
+          font-size: 1.25rem;
+          margin-top: 0 !important;
+  
+          p {
+            padding-left: 0!important;
+            text-indent: 0!important;
+            margin: 0 !important;
+          }
+        }
+      }
+  
+      /deep/ .radio {
+        margin-top: 1.9375rem;
+        .ant-radio-button-wrapper:first-child{
+          margin-right: 1.6875rem!important;
+        }
+        /deep/label {
+          width: 15.875rem;
+          height: 3rem !important;
+          line-height: 3rem;
+        }
+      }
+  
+    }
+    .addbtn {
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: 4.3125rem;
+    }
+  }
+  
+  .header {
+    width: max-content;
+    padding-top: 1.5625rem;
+    margin: 0 0 1.25rem 0;
+    font-size: 1.375rem;
+    font-family: 'Microsoft JhengHei' !important;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 1);
+    line-height: 2.5rem;
+  
+    span {
+      display: inline-block;
+      font-size: 1.625rem !important;
+      font-weight: 600;
+      line-height: 2.8125rem;
+      border-bottom: 0.125rem solid #3a3a3a;
+    }
+  }
+  
+  .infoList {
+    margin: 0 0 1.25rem 0;
+  }
+  
+  /deep/.info {
+    line-height: 1.625rem;
+   .form_info {
+    .lis {
+      &:nth-child(3) {
+        margin-top: -0.375rem;
+        // background-color: red;
+
+      }
+    }
+
+    }
+    
+  }
+  
+  .splice {
+    margin: 0 0.25rem;
+  }
+  
+  .tip {
+    margin-bottom: 0.625rem;
+    font-size: 0.75rem;
+    color: $primary-color;
+    margin: 0 0 1.25rem 0;
+  }
+  
+  .occupationbtn {
+    margin: 0 0 1.25rem 0;
+  }
+  
+  .title {
+    margin: 0 0 0.625rem 0;
+  }
+  
+  .ant-btn>.anticon+span,
+  .ant-btn>span+.anticon {
+    float: right;
+    margin-top: 0.25rem;
+  }
+  
+  .productInfo>p {
+    margin: 0.625rem 0;
+  }
+  
+  .insurefooter {
+    padding: 1.49rem 0;
+    z-index: 15;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 22.5rem;
+    right: 0;
+    text-align: center;
+    line-height: 2.5rem;
+    background: #fff;
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-box-shadow: rgba(31, 31, 31, 0.11) 0 0 1.3125rem 0.0625rem;
+    -moz-box-shadow: rgba(31, 31, 31, 0.11) 0 0 1.3125rem 0.0625rem;
+    box-shadow: rgba(31, 31, 31, 0.11) 0 0 1.3125rem 0.0625rem;
+  
+    .price {
+      margin: 0 3rem 0 0;
+  
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: rgba(216, 31, 73, 1);
+      line-height: 2.9375rem;
+  
+      .pricemount {
+        font-weight: bold;
+        font-size: 2.3125rem;
+        margin-right: 0.3125rem;
+      }
+    }
+  
+    .prebtn:focus {
+      border-color: #979797;
+    }
+  
+    .prebtn,
+    .nextbtn {
+      
+      margin-right: 1.25rem;
+      width: 11.4375rem;
+      height: 3.6875rem;
+      line-height: 3.6875rem;
+      font-weight: 600;
+      border-radius: 3.125rem;
+      font-size: 1.25rem;
+    }
+  
+    .prebtn {
+      color: #808080;
+      background-color: #fff;
+      border-color: #979797;
+  
+  
+    }
+  
+    .nextbtn {
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+  
+  .little {
+    font-size: 0.75rem;
+    color: #6a6a6a;
+  }
+  
+  .benefiBox {
+    position: relative;
+    background: #F6F6F6;
+    padding: 1.875rem 0 1.875rem 1.875rem;
+    margin: 1.875rem 0 1.875rem 0;
+    font-size: 1.125rem;
+  
+    .deletebtn {
+      position: absolute;
+      top: 1.875rem;
+      right: 1.875rem;
+      font-size: 1.25rem;
+      color: $primary-color;
+    }
+  
+    /deep/ .formInput {
+      background-color: #F6F6F6 !important;
+    }
+  }
+  
+  .benefiCon {
+    margin-top: 3.75rem;
+    width: 91%;
+  
+    .header {
+      padding: 0
+    }
+  }
+  
+  .addbtn {
+    width: 15rem;
+    height: 3rem;
+    border: 0.125rem solid rgba(216, 31, 73, 1);
+    border-radius: 1.25rem;
+    line-height: 2.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 1.25rem 0 1.25rem 0;
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+  
+  .footertip {
+    line-height: 1.5rem;
+    margin: 0 0 0.625rem 0;
+    margin-bottom: 0 !important;
+    font-size: 1rem;
+    color: #6a6a6a;
+  }
+  
+  .footerphone {
+    margin: 1.25rem 0 !important;
+    font-size: 1.25rem !important;
+    font-weight: 700;
+  }
+  
+  .footerlasttip {
+    font-size: 1rem !important;
+    line-height: 1.5rem;
+    padding: 0 0 3.125rem 0;
+    color: #6a6a6a;
+  }
+  
+  .switchbtn {
+    margin: 0.625rem 0;
+  }
+  
+  .statementtitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 0 7.5rem;
+    width: 12.5rem;
+    display: inline-block;
+  }
+  
+  .ant-collapse {
+    background: #fff;
+    border: 0;
+  }
+  
+  .ant-collapse-item {
+    margin: 0 0 1.25rem 0;
+  }
+  
+  .collapseicon {
+    float: right;
+    color: $primary-color;
+    margin: 0 0.375rem 0 0;
+  }
+  
+  .submitbtn {
+    width: 17.0625rem;
+    height: 3.0625rem;
+    border-radius: 3.125rem;
+    line-height: 49x;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 1.25rem 0 1.25rem 0;
+  }
+  
+  .insurelable {
+    margin: 1.25rem 0;
+    width: 100%;
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    color: #3A3A3A;
+  }
+  
+  .insurelableBox {
+    margin: 0 0 1.25rem 0;
+  }
+  
+  .insurelabletitle::after {
+    content: "："
+  }
+  
+  .insurelabletitle1::after {
+    content: ""
+  }
+  
+  .collapseBox {
+    position: relative;
+    width: 100%;
+  }
+  
+  .antcheck {
+    position: absolute;
+    top: 2.5rem
+  }
+  
+  .serialNumber {
+    padding: 0 0 1.25rem 0;
+  }
+  
+  .insuresuccess {
+    font-size: 2.125rem;
+    color: #161616;
+    padding: 1.875rem 0 2.5rem 0;
+  }
+  
+  .jumpbtn {
+    width: 20.25rem;
+    height: 3.6875rem;
+    background: rgba(216, 31, 73, 1);
+    font-size: 1.125rem;
+    border-radius: 3.125rem;
+    margin: 4.125rem 0 8.125rem 0;
+  }
+  
+  .imgcarousel {
+    padding: 0 0 4.375rem 0
+  }
+  
+  .carouselimgBox {
+    height: 11.8125rem;
+  }
+  
+  /deep/.stepBox {
+  
+    /deep/.ant-steps-item {
+      /deep/.ant-steps-item-icon {
+        width: 1.9375rem !important;
+        height: 1.9375rem !important;
+        line-height: 1.9625rem;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+  
+      .ant-steps-item-content {
+        height: 1.875rem !important;
+        line-height: 3rem;
+      }
+    }
+  
+    /deep/.ant-steps-item:nth-child(5) {
+      // margin-top: 2rem;
+      .ant-steps-item-icon,
+      .anticon {
+        width: 2.125rem !important;
+        height: 2.125rem !important;
+      }
+    }
+  }
+  
+  .content /deep/ .insure {
+    .form {
+  
+      /deep/.linelabelitem {
+        // margin-bottom: 1.25rem!important;
+        /deep/.ant-form-item-label label {
+          font-size: 1.25rem;
+        }
+  
+        .ant-form-item-control-wrapper .ant-form-item-children {
+          padding-left: .125rem;
+          font-size: 1.25rem;
+        }
+      }
+  
+      /deep/.ant-row {
+        .ant-form-item-required {
+        }
+  
+        .ant-form-item-label .ant-form-item-required {
+          &::before {
+            font-size: .875rem;
+            // color: black!important;
+          }
+          color: #3a3a3a;
+        }
+      }
+  
+      .ant-form-item {
+        .inputBox {
+          .ant-input {
+            width: 29.875rem;
+          }
+  
+          .ant-input::placeholder {
+            // color: red !important;
+            // font-size: 1rem;
+          }
+  
+          .afterunit {
+            font-size: 1.25rem;
+          }
+        }
+  
+        .ant-form-explain {
+          margin-top: 0.3125rem;
+          font-size: 1rem;
+          color: #d81f49;
+        }
+      }
+    }
+  }
+  
+  /deep/.form {
+    /deep/.other {
+      .addbtn {
+        border-radius: 1.875rem !important;
+      }
+    }
+  }
+  
+  /deep/.step_two {
+    .insureitem:nth-child(3) {
+      .formDiv {
+        margin: 0 !important;
+  
+        .dateIcon {
+          width: 2.125rem;
+          top: 1.2rem;
+          ;
+          right: 2rem;
+          height: 1.9375rem;
+        }
+      }
+  
+      .benefiBox {
+        .commselectBox {
+          margin-top: -.2rem;
+        }
+  
+      }
+  
+      .benefiBox .benefiCon {
+        .form:nth-child(3) {
+          .ant-form-item-control {
+            width: 15.625rem;
+            padding-left: 2rem;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  
+    /deep/.commselectBox {
+      width: 15.875rem !important;
+  
+      .ant-select-selection {
+        width: 15.875rem !important;
+      }
+  
+      .ant-select-selection__rendered {
+        // height: 2.9375rem !important;
+        line-height: 2.5rem !important;
+      }
+  
+      .ant-form-item-control-wrapper {
+        .ant-select-selection {
+          width: 15.875rem;
+          height: 2.9375rem;
+          line-height: 2.9375rem;
+        }
+      }
+    }
+  
+  
+    .header {
+      margin-bottom: 2rem;
+    }
+  
+    #two-two {
+      .lis {
+        .ant-form-item-label .ant-form-item-required {
+          display: none;
+        }
+  
+      }
+    }
+  
+    .titleFont {
+      // font-size: 1rem;
+    }
+  
+    .footerphone {
+      font-size: 1rem;
+      color: #3a3a3a;
+    }
+  
+    .footerlasttip {
+      font-size: 0.9375rem;
+      line-height: 1.875rem;
+    }
+  
+    .insureitem {
+      .benefiBox {
+        width: 38.75rem;
+        margin-top: 3.75rem;
+  
+        .benefiCon {
+          margin-top: 0;
+          // width: 72%;;
+          width: 31.4375rem;
+  
+          .header {
+            width: 100%;
+            font-size: 1.125rem;
+            padding-bottom: 0.625rem;
+            border-bottom: 0.125rem solid #3a3a3a;
+            color: #161616;
+  
+            span {
+              border: none;
+              font-size: 1.375rem !important;
+              font-weight: 600;
+            }
+  
+            // }
+          }
+  
+          .lis .ant-input {
+            width: 100% !important;
+          }
+          .lis .formInput {
+            padding-left: .7rem!important;
+            font-family: Microsoft JhengHei !important;
+  
+          }
+          .lis .formInput::placeholder {
+            font-family: Microsoft JhengHei !important;
+  
+          }
+  
+          .bgTest {
+            width: 100% !important;
+          }
+  
+          .form .benefiBox .form:nth-child(1),
+          .lis:nth-child(1),
+          .lis:nth-child(3) {
+            .ant-input {
+              width: 24.375rem;
+            }
+  
+            /deep/.ant-form-item-control-wrapper {
+              width: auto;
+            }
+  
+            .ant-form-item-label {
+              margin-right: 1.25rem;
+            }
+  
+            .ant-form-item-label,
+            .ant-form-item-control-wrapper {
+              width: auto;
+              display: inline-block;
+            }
+          }
+  
+          .form:nth-child(4) .lis:nth-child(1) {
+            .ant-form-item-control-wrapper {
+              display: block !important;
+              width: 100% !important;
+              margin: 0;
+  
+              .ant-radio-button-wrapper:first-child {
+                margin-right: 1.25rem;
+              }
+            }
+  
+          }
+          .switch .box .text {
+            font-size: 1.125rem;
+          }
+          .form .lis .commselectBox {
+          
+            .ant-select-selection {
+              width: 12.5rem;
+              background: #f6f6f6;
+              height: 2.5rem;
+  
+              .ant-select-selection__rendered {
+                font-size: 1.125rem;
+                line-height: 2.4rem !important;
+              }
+              
+            }
+          }
+        }
+      }
+  
+      .addbtn {
+        border-radius: 1.875rem;
+        font-size: 1.125rem !important;
+        font-weight: 600;
+  
+        .add {
+          font-size: 1.25rem;
+          padding-right: 0.3125rem;
+        }
+      }
+  
+      .footertip {
+        font-size: 1rem !important;
+        line-height: 1.875rem;
+        color: #6a6a6a;
+      }
+  
+      .add_input {
+        padding-left: 1rem;
+      }
+  
+      .two_info {
+        margin-bottom: 1.875rem;
+      }
+  
+      .form .form_info .lis:nth-child(2) {
+        margin-top: 3.125rem;
+  
+        .addr_select {
+  
+          // background-color: red;
+          .add_input {
+            width: 47.5%;
+            height: 3rem;
+            line-height: 3rem;
+            margin-right: 3.5%;
+            border-radius: 0rem;
+            text-align: left;
+            // color: #606060;
+            background: #E1E1E1;
+            border: none;
+            font-size: 1.125rem;
+          }
+  
+          .add_input::placeholder {
+            padding-left: 1.25rem;
+            font-size: 1.125rem;
+            color: #606060 !important;
+            text-align: left !important;
+          }
+  
+          .select_opt {
+            width: 47.5% !important;
+            color: #606060 !important;
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+  
+            .ant-select-selection {
+              height: 3rem;
+              background: rgba(0, 0, 0, 0);
+              border-radius: inherit;
+              padding-left: 0.625rem;
+              ;
+            }
+  
+            .ant-select-selection__rendered {
+              line-height: 3rem !important;
+            }
+  
+            .ant-select-selection__placeholder {
+              font-size: 1.125rem;
+              color: #606060 !important;
+  
+            }
+  
+            .ant-select-selection-selected-value {
+              font-size: 1.125rem;
+            }
+          }
+  
+          .select_opt:nth-child(3) {
+            margin-right: 3.5%
+          }
+        }
+      }
+  
+      .form .form_info .lis:nth-child(3) {
+        .inputBox {
+          width: 100%;
+  
+          .ant-input {
+            width: 100% !important;
+          }
+  
+          .bgTest {
+            width: 100% !important;
+          }
+  
+          .tip {
+            color: #d81f49 !important;
+          }
+        }
+      }
+  
+      .insurelable {
+        margin-top: 0.725rem;
+        margin-bottom: 0 !important;
+        ;
+      }
+  
+      /deep/.telephone {
+        width: 100% !important;
+  
+        /deep/ .ant-input {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+  
+  /deep/ .step_one #infromFactors {
+    width: 33.4375rem;
+
+    .infromFactors {
+      .form  {
+        .form_info {
+          .lis {
+            &:nth-child(2) {
+              // background-color: red;
+              margin-top: 3rem;
+              .linefeeditem {
+                .ant-form-item-label {
+                  margin-bottom: .2rem;
+                }
+                .ant-form-item-control-wrapper {
+                  .ant-form-item-control {
+                    margin-bottom: .5rem;
+                  }
+                /deep/  .commentBox  {
+                    #select_vocation {
+                      width: 15.875rem!important;
+                      &:nth-child(1) {
+                        margin-right: 0!important;
+                        margin-left:0!important
+                      }
+                      &:nth-child(2) {
+                        margin-left: 1.6875rem!important;
+                      }
+                      &:nth-child(3) {
+                        margin-top: 1.5rem;
+                        .fl {
+                          width: 15.875rem!important;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+  
+            }
+            &:nth-child(5) {
+              margin-top: -.36rem;
+              .linefeeditem {
+               /deep/ .other {
+                  .commentBox  {
+                    .item {
+                      width: 15.875rem!important;
+                      // background-color: red;
+                      &:nth-of-type(1) {
+                        margin-right: 0!important;
+                      }
+                      &:nth-of-type(2) {
+                        margin-left: 1.625rem!important;
+                        margin-top: .9375rem;
+                      }
+                      &:nth-of-type(3) {
+                        width: 52%!important;
+                        .fl {
+                          margin-top: .5rem;
+                          width: 15.875rem!important;
+  
+                        }
+                      }
+                    }
+  
+                  }
+  
+                }
+              }
+            }
+          }
+  
+        }
+      }
+  
+    }
+    .box /deep/.label {
+      font-size: 1.25rem!important;
+    }
+  
+    .form .form_info {
+      margin-top: 0 !important;
+    }
+  
+    .form /deep/.other .addbtn {
+      margin-top: -0.625rem !important;
+      width: 11.25rem;
+      height: 2.9375rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      font-size: 1rem;
+  
+      .anticon {
+        // font-weight: 600;
+        font-size: 1.1875rem;
+        line-height: 2.25rem;
+  
+        svg {
+          font-size: initial;
+        }
+      }
+    }
+  
+    .form /deep/.other .addbtn:hover {
+      font-weight: 600;
+    }
+  
+  
+    .form {
+      .itemtip {
+        margin-bottom: 0;
+      }
+  
+      .linefeeditem {
+        margin-bottom: 0;
+      }
+    }
+  
+    .form:nth-child(1) {
+      /deep/.linefeeditem {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  
+  /deep/.step_one .insureitem:last-child {
+    padding-bottom: 7.8625rem;
+
+    .search {
+      margin-top: 6.25rem !important;
+    }
+  
+    /deep/ .commentBox {
+  
+      .commentBox>div:nth-child(3) {
+        margin-top: 18.75rem;
+      }
+  
+      .box {
+        display: block;
+      }
+  
+      .ant-select-selection {
+        height: 2.5rem;
+        line-height: 2.5rem;
+  
+        .ant-select-selection__rendered {
+          line-height: 2.5rem;
+          font-size: 1rem;
+        }
+  
+      }
+  
+      .fl {
+        width: 47% !important;
+        margin-top: 0 !important;
+        margin-bottom: 0.9375rem !important;
+      }
+  
+      .fl:nth-child(3) {
+        position: relative;
+        margin-top: 0rem;
+        margin-bottom: 0 !important;
+        height: 2.8125rem !important;
+        width: 100% !important;
+      }
+  
+      .fl:nth-child(2) {
+        margin-left: 0rem !important;
+      }
+    }
+  
+    // background: red;
+    ;
+  
+    .lineitem {
+      margin: 0.625rem 0;
+    }
+  
+    .commselectBox {
+      width: 12.5rem !important;
+  
+      .commselectBox .ant-select-selection {
+        height: 2.5rem !important;
+        line-height: 2.5rem !important;
+  
+        .ant-select-selection__rendered {
+          height: 2.5rem !important;
+          line-height: 2.5rem !important;
+        }
+      }
+    }
+  }
+  
+  .step_one {
+    .questionList {
+      /deep/ &>div:first-child {
+        padding-top: 1.3425rem;
+
+      }
+    }
+    width: 33.875rem !important;
+      #otherInfroms {
+        margin-top: 1.1rem;
+      }
+    /deep/ #infromFactors {
+      margin-top: -1rem;
+      .infromFactors {
+        .form {
+          .form_info {
+            .lis {
+              &:nth-child(1) {
+                margin-top: -0.3125rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    /deep/ #applicatFactors {
+      width: 33.125rem;
+      .form {
+        .form_info {
+          .lis {
+            &:nth-child(1), &:nth-child(4) {
+              margin-bottom: -.8rem;
+            }
+            &:nth-child(6){
+              margin-top: -.65rem;
+              .ant-form-item-label {
+                margin-bottom: 1rem;
+              }
+            }
+            &:nth-child(7),&:nth-child(8){
+              margin-top: -.5rem;;
+            }
+          }
+        }
+      }
+    }
+   
+  
+  
+    /deep/ .ant-form-item-control-wrapper .ant-form-item-control {
+      font-size: 1.25rem !important;
+    }
+  
+    /deep/ .ant-form-item-label {
+      // background: red;
+      &::after {
+        // content: ''!important;
+        // padding: 0!important;
+      }
+      label {
+        font-size: 1.25rem !important;
+        color: #3a3a3a;
+  
+        // &::after {
+        //    content: ''!important;
+        // padding: 0!important;
+        //   // margin: 0 0.5rem 0 0.5rem !important;
+        // }
+      }
+    }
+  
+    /deep/ .ant-col-5 {
+      width: 19.6% !important;
+    }
+  
+    /deep/ .insureitem:last-child {
+      margin-top: 1.375rem;
+      .header {
+        margin-bottom: 1rem!important;
+      }
+      .lis {
+        &:nth-child(2) {
+          .lineitem {
+            margin-top: 0;
+          }
+        }
+      }
+      /deep/ .lis:nth-child(2) .ant-form-item-label {
+        padding-top: 0.295rem;
+      }
+  
+      /deep/ .lis:nth-child(2) .ant-form-item-label label::after {
+        // height: 20rem;
+        content: "";
+      }
+  
+      /deep/.commselectBox {
+  
+        width: 15.875rem !important;
+       
+        .ant-select-selection__rendered {
+          height: 2.9375rem;
+          // line-height: 2.9375rem;
+          line-height: 2.7rem !important;
+        }
+  
+        .ant-form-item-control-wrapper {
+          .ant-select-selection {
+            width: 15.875rem;
+            height: 2.9375rem;
+            line-height: 2.9375rem;
+          }
+        }
+      }
+  
+      /deep/ .ant-form-item-control-wrapper {
+        /deep/.commselectBox {
+          // height: 123rem;
+          .ant-select-selection {
+            height: 2.9375rem;
+            line-height: 2.9375rem;
+          }
+        }
+      }
+    }
+  
+    /deep/ .ant-form-item-label {
+      vertical-align: inherit;
+    }
+  
+    .insureitem {
+      position: relative;
+    }
+  
+    .radio {
+      margin-top: 1.5rem;
+    }
+  
+    .coin {
+      font-size: 1rem;
+      position: absolute;
+      color: #606060;
+    }
+  }
+  
+  .step_one {
+    
+    p {
+      margin-bottom: 0 !important;
+    }
+  
+    .header {
+      margin-bottom: 1rem !important;
+    }
+  
+    /deep/ .other {
+      .commselectBox {
+        .item::nth-child(1) {
+          height: 50rem !important;
+        }
+  
+        .search {
+          .searchBtn {
+            position: absolute;
+            left: 16.5125rem;
+            top: 1.7375rem;
+          }
+        }
+      }
+    }
+  
+    left: 0.625rem;
+  }
+  
+  /deep/.step_three {
+  
+    .insureitem:nth-child(3)>div>p {
+      .insurelabletitle {
+        display: none;
+      }
+  
+      // background: red;
+      margin-top: 2rem;
+    }
+  
+    .codeSure {
+      padding: 2.5rem 2.1875rem 1.25rem;
+  
+    }
+  
+    .codeDiv {
+      font-size: 1.25rem !important;
+      margin-top: 1.875rem;
+      font-weight: 600;
+      ;
+  
+    }
+  
+    .benefiCon {
+      margin-top: 0 !important;
+    }
+  
+    /deep/.inputDiv {
+      .thisInput::placeholder {
+        color: #bebebe !important;
+      }
+  
+      .tipFont {
+        margin-top: 0.875rem;
+      }
+  
+      /deep/.reset {
+        margin-top: 1.875rem;
+  
+        img {
+          width: 0.9375rem;
+          height: 0.9375rem;
+          ;
+        }
+  
+        .redtip {
+          // color: #bebebe !important;
+          // font-size: 1rem;
+  
+        }
+      }
+    }
+  }
+  
+  .step_three {
+    .insureitem {
+      margin-bottom: 1.875rem;
+    }
+  
+    .insurelable {
+      margin: 0.625rem 0 0 0;
+      // font-size: 1rem!important;
+  
+      .header {
+        border-bottom: 0.125rem solid #626262;
+      }
+    }
+  
+    .submitbtn {
+      width: 20.25rem;
+      height: 3.6875rem;
+      border: none;
+      line-height: 3.6875rem;
+    }
+  
+    .submitbtn:disabled {
+      color: #cfcfcf;
+    }
+  
+    .insureitem:nth-child(3) {
+      .benefiBox {
+        .insurelable {
+          margin-top: 0.8rem;
+        }
+  
+        .header span {
+          width: 34.375rem;
+          padding-bottom: .9375rem;
+  
+  
+        }
+      }
+    }
+  
+    .header {
+      margin-bottom: 1.875rem !important;
+  
+      span {
+        border-bottom: 0.125rem solid #626262;
+      }
+    }
+  
+    .insureitem:nth-child(2) {
+      .insurelable:nth-child(11) {
+        .item:nth-child(1) {
+          margin-bottom: 0.625rem;
+  
+        }
+      }
+    }
+  
+    /deep/.insureitem {
+      margin-bottom: 1.875rem;
+  
+      .collapseBox {
+        .thisbtn {
+          cursor: pointer;
+        }
+      }
+  
+      .insurelable {
+        margin: 0.625rem 0 0;
+      }
+    }
+  }
+  
+  .insure /deep/.stepFour {
+  
+    .insureitem {
+      margin-bottom: 0.625rem;
+  
+      /deep/.oteh1r {
+        p {
+          word-wrap: break-word;
+          ;
+  
+          span {
+            font-size: 0.875rem !important;
+            // display: inline-block!important;
+  
+            span {
+              // display: inline-block;
+            }
+          }
+  
+          span:last-child {
+            margin-left: 0.625rem;
+            // display: inline-block!important;
+  
+          }
+  
+          margin-left: 0 !important;
+        }
+      }
+  
+      .header {
+        padding-top: 1.5625rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+  
+      .way {
+        font-size: 0.9375rem !important;
+        .red {
+          color: #fff!important;
+        }
+        .state {
+          font-size: 1.25rem;
+          margin-top: 2.5rem;
+        }
+  
+        .bank-input {
+          font-size: 1.125rem;
+          color: #606060;
+        }
+  
+        .selectbox {
+          padding-top: .325rem !important;
+  
+          .select {
+            width: 48%;
+  
+            .ant-select {
+              // margin-right: 0.3125rem;
+              width: 87% !important;
+            }
+  
+            .ant-select-selection {
+              border-radius: 0;
+              height: 2.5rem;
+              line-height: 2.5rem;
+  
+              /deep/ .ant-select-selection__rendered {
+                line-height: 2.5rem !important;
+              }
+  
+              .ant-select-arrow {
+                font-size: 1.125rem;
+                top: 44%;
+                color: #727272;
+              }
+            }
+          }
+        }
+  
+        .way-item {
+          font-size: 1.125rem !important;
+          height: 3rem;
+          width: 15.875rem;
+          color: #606060;
+  
+          &:nth-child(2) {
+            margin-left: 1rem;
+          }
+        }
+  
+        .bankbox {
+          font-size: 1.25rem;
+  
+          .left,
+          .right {
+  
+            // font-size: 0.9375rem;
+            .searchBank {
+              // font-size: 0.9375rem;
+  
+            }
+          }
+        }
+      }
+  
+    }
+  
+  
+    .insurelable {
+      margin: 0.625rem 0 0 0;
+    }
+  }
+  
+  .insure /deep/ .step_five {
+  
+    // width: 33rem!important;
+    .success1 {
+      padding-top: 1rem;
+      font-size: 2.625rem;
+      font-weight: 600;
+      padding-bottom: 2rem;
+    }
+  
+    .insurelable {
+      margin-top: 0.825rem;
+      font-size: 1.25rem;
+      // letter-spacing: 0.125rem;
+      ;
+      margin-bottom: 0;
+    }
+  
+    .jumpbtn {
+      width: 20.25rem;
+      font-size: 1.25rem;
+      height: 3.6875rem;
+    }
+  }
+  
+  .stepOne-select {
+    /deep/ .lis :nth-child() {}
+  }
+  
+ 
+// }

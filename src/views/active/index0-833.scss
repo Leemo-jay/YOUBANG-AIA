@@ -1,0 +1,65 @@
+@media  screen and (max-width: 1023px) {
+  .active {
+    min-height: 43.75rem;
+    background: #fff;
+  }
+  .active {
+    width: 100%;
+    background: #fff;
+    min-height: 90vh;
+    padding: 5.5rem 0 7.1875rem;
+    overflow: auto;
+
+    .activebox {
+      max-width: 40rem;
+      /*width: 63.8125rem;*/
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .title {
+        padding-bottom: 1.875rem;
+        width: 85.94%;
+        margin: 0 auto;
+        font-size: 1.375rem;
+        font-weight: bold;
+        color: #161616;
+        text-align: left;
+      }
+
+      .item {
+        width: 85.94%;
+        margin: 0 auto;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 6.25rem;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+        }
+
+        .state {
+          color: #161616;
+          font-size: 0.875rem;
+          font-weight: 700;
+        }
+      }
+
+      .fr {
+        float: right;
+      }
+    }
+
+    .more {
+      font-size: 1.25rem;
+      color: $primary-color;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

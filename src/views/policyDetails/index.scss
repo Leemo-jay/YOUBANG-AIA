@@ -1,0 +1,147 @@
+.contentDiv {
+	width: 100%;
+	background: #fff;
+}
+
+.contentBox{
+	padding-top: 100px;
+	background: #fff;
+	padding-bottom: 5.625rem;
+
+
+
+}
+.insurecontentBox{
+	width: 1021px;
+	margin: 0 auto;
+
+}
+.insurecontent{
+	letter-spacing: 0.0625rem;
+	position: relative;
+	padding: 5.375rem 0 0 0;
+	.coin {
+		font-size: 1rem;
+		position: absolute;
+		top: 5rem;
+		right: 0;;
+		color: #161616;
+
+	}
+	.policyBox li:last-child {
+		border-bottom: none;
+	}
+	.policyBox1{
+		.policycontent{
+			border-bottom: none;
+		}
+	}
+}
+.contitle{
+	// height: 2.5rem;
+	padding-bottom: .625rem;
+	line-height: 2.5rem;
+	border-bottom: 0.125rem solid #D3D3D3;
+	color: #3A3A3A;
+	font-weight: 600;
+	font-size: 1.625rem;
+
+}
+.policyBox{
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
+	color:#3A3A3A ;
+	overflow: hidden;
+	// padding: 0 0.9375rem;
+
+}
+
+.policycontent{
+	float: left;
+	width: 50%;
+	height: 4.6875vw;
+	line-height: 4.375rem;
+	padding-left: 0.9375rem;
+	color: #3A3A3A;
+	border-bottom:0.125rem solid #F3F3F3;
+}
+.policy_content {
+	padding-left: 6.875rem ;
+}
+
+
+
+.benefitBox{
+		border-bottom:0.125rem solid #F3F3F3;
+		overflow: hidden;
+}
+.benefitBox:last-child{
+		border-bottom:0;
+}
+.benefit{
+	float: left;
+	width: 50%;
+	height: 2.875rem;
+	padding-left: 0.937rem;
+	line-height: 2.875rem;
+	color: #3A3A3A;
+}
+.benefit:nth-child(2) {
+	padding-left: 6.875rem;
+}
+.benefitype{
+	overflow: hidden;
+	font-size: 1.25rem;
+}
+.benefitypecontent{
+	float: left;
+	width: 50%;
+	// height: 5.625rem;
+	padding-left: 0.937rem;
+	line-height: 5.625rem;
+	color: #3A3A3A;
+	border-bottom:0.0625rem solid #F3F3F3;
+}
+.benefitypecontent:nth-child(2) {
+	padding-left:6.875rem ;
+}
+.benefitconBox{
+		padding: 0 0.625rem;
+		// height: 5.625rem;
+		font-size: 1.25rem;
+}
+.labeltit::after{
+	content: '：'
+}
+.legaltip{
+	margin-top: 0.9375rem;
+	height: 2.875rem;
+	line-height: 2.875rem;
+	font-size: 1.25rem;
+	color: #3A3A3A;
+	padding: 0 0 0 0.625rem;
+}
+.footertip{
+	// margin: 3.125rem 0 3.125rem 0;
+	padding-top: 3.25rem;
+	padding-bottom: 2.5rem;
+	color: #3A3A3A;
+	font-size: 1.125rem;
+	font-weight: 400;
+	}
+	.footertip a {
+		font-weight: 600;
+		text-decoration: underline;
+	}
+	.backtip{
+		text-decoration: underline;
+		// font-size: 0.9375rem;
+	}
+	.backtip,.arrow{
+		font-size: 1.5rem;
+		cursor: pointer;
+		color: #6A6A6A;
+	}
+	.arrow:before{
+		content:"< "
+	}

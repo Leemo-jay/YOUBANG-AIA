@@ -1,0 +1,51 @@
+@media screen and(max-width:1023px) {
+  .product-detail-content {
+    .insureformwrap {
+      display:none
+    }
+    .product-detail-left {
+      .h5_insurance_clac {
+        position:fixed;
+        top:0;
+        background:rgba(0,0,0,.5);
+        width:100vw;
+        height:100vh;
+        z-index:99;
+        .calc_box {
+          position: absolute;
+          bottom: 3.09rem;
+          height: 59vh;
+          width: 100%;
+          padding-top: 2rem;
+          overflow: scroll;
+          // padding-bottom: 3.3125rem;
+          .calc_inner >>> .sumbitbtn {
+            margin-top: 0;
+          }
+          .calc_inner {
+            // margin-bottom: 4rem;
+            .form >>> .form_info {
+              width: 17.25rem;
+              margin: 0 auto;
+              .dateIcon{
+                position: absolute;
+                top: 0.25rem;
+                right: 0.625rem;
+              }
+              .lis {
+                .pb {
+                  margin-bottom: 1.5625rem;
+                  padding-bottom: 0.875rem;
+                  border-bottom: 0.0625rem solid #C5C5C5;
+                  .lineitem {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1023px) {
+  .codeSure {
+    overflow: hidden;
+    width: 28.9375rem;
+    line-height: 2.125rem;
+    margin: 2.5rem 0;
+    background: #fff;
+    padding: 1.25rem 0.875rem;
+    border: calc(100vw / 320 * 1) solid #dadada;
+    font-size: calc(100vw / 320 * 12);
+    color: #6a6a6a;
+    word-break: break-all;
+    transition: all 0.4s;
+    box-sizing: border-box;
+
+    .codeDiv {
+      margin-top: calc(100vw / 320 * 29)!important;
+      margin-bottom: calc(100vw / 320 * 10)!important;
+      font-size: calc(100vw / 320 * 24);
+      font-family: "Microsoft JhengHei" !important;
+      font-weight: 600;
+      color: rgba(58, 58, 58, 1);
+      line-height: 2.1875rem;
+    }
+    .isGrey {
+      cursor: not-allowed;
+      color: #6a6a6a;
+      font-size: calc(100vw / 320 * 16)!important;
+    }
+    .reset {
+      .isGrey {
+        cursor: not-allowed;
+        color: #6a6a6a;
+        font-size: calc(100vw / 320 * 13)!important;
+      }
+    }
+    .redtip {
+      color: $primary-color !important;
+      cursor: pointer;
+      font-size: calc(100vw / 320 * 13)!important;
+    }
+    .thisInput {
+      // margin-top: 1.25rem;
+      background-color: #ffffff;
+      padding: 0.125rem;
+      padding-left: 0;
+      position: relative;
+      border: none;
+      font-size: calc(100vw / 320 * 14)!important;
+      // font-size: px(28);
+      //height: px(46);
+      outline: 0;
+      // -webkit-opacity: 1;
+      border-radius:0!important;
+      width: 85%;
+      border-bottom: 0.0625rem solid #e8e8e8;
+      // padding-bottom: 0.25rem !important;
+    }
+    input.thisInput::placeholder {
+      font-size: calc(100vw / 320 * 14)!important;
+      // font-size: 0.875rem;
+    }
+    .isfoucs {
+      border-bottom: 0.0625rem solid #a2b5f9;
+    }
+    .isblur {
+      border-bottom: 0.0625rem solid #e8e8e8;
+    }
+  }
+  .step-right .heightThis .codeSure {
+    margin-top: 4.8125rem;
+    padding: 2.5rem;
+    width: 28.9375rem;
+    font-size: 1rem;
+    line-height: 2.125rem;
+    .codeDiv {
+      font-size: 1.25rem;
+      font-family: "Microsoft JhengHei" !important;
+      font-weight: 600;
+      color: rgba(58, 58, 58, 1);
+      line-height: 2.1875rem;
+    }
+    .reset {
+      margin-top: 4.375rem;
+    }
+  }
+  .step-right .check .postbtn {
+    width: 20.25rem;
+  }
+  .tipFont {
+    font-size: calc(100vw / 320 * 12)!important;
+    margin-top: calc(100vw / 320 * 5)!important;
+
+    color: $primary-color !important;
+  }
+  // .heightThis {
+  // height: 16.4375rem;
+  // }
+  .codeSure .redtip {
+    font-size: calc(100vw / 320 * 13)!important;
+  }
+  .reset {
+    font-size: calc(100vw / 320 * 13);
+    margin: calc(100vw / 320 * 27) 0 calc(100vw / 320 * 12)!important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      color: skyblue;
+    }
+    img {
+      width: calc(100vw / 320 * 12);
+      margin-right: 0.55rem;
+    }
+
+    span {
+      color: #6a6a6a;
+      // border-bottom: .0625rem solid #6A6A6A;
+      // color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .redtip {
+    color: $primary-color !important;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  .codeDiv {
+    margin-bottom: calc(100vw / 1680 * 12)!important;
+  }
+  .thisInput {
+    border-radius:0!important;
+    width: calc(100vw / 1680 * 381)!important;
+  }
+  .tipFont {
+    margin-top: calc(100vw / 1680 * 7)!important;
+  }
+  .reset {
+    margin-top: calc(100vw / 1680 * 55)!important;
+    margin-bottom: calc(100vw / 1680 * 35)!important;
+  }
+}

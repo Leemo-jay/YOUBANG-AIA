@@ -1,0 +1,208 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .hello #allParent .nav-right {
+       padding-right: 2%!important;
+    }
+    .billList {
+       padding-right: 2%!important;
+       /deep/ .backbtn span:nth-child(2) {
+         border-bottom: 0.0625rem solid #6a6a6a;
+       }
+       /deep/ .ant-table-placeholder {
+         border-radius: 0 !important;
+       }
+     }
+     .billList /deep/ .ant-spin-container {
+       margin-left: 0 !important;
+       margin-right: 0 !important;
+       width: 100% !important;
+     }
+   }
+
+ .billList {
+   min-height: 43.75rem;
+   font-size: 1rem;
+   padding-right: 6.25rem;
+   .ant-table-placeholder {
+     border-radius: 0 !important;
+   }
+   .table {
+     margin-top: calc(100vw / 1680 * 54)!important;
+   }
+   /deep/ .ant-table-thead > tr > th  {
+     color: #3a3a3a;
+     font-weight: 600;
+     padding: calc(100vw / 1680 * 15.8)!important;
+     padding-bottom: calc(100vw / 1680 * 20)!important;
+   }
+   /deep/ .ant-table-tbody > tr > td {
+     padding: calc(100vw / 1680 * 17) 0!important;
+     padding-left: calc(100vw / 1680 * 32)!important;
+     line-height: calc(100vw / 1680 * 26)!important;
+     backface-visibility: hidden;
+     span{
+      //  line-height: calc(100vw / 1680 * 18)!important;
+     }
+     p {
+      line-height: calc(100vw / 1680 * 27)!important;
+      margin: 0!important;
+     }
+     .ant-dropdown-link svg {
+       width: calc(100vw / 1680 * 25)!important;
+       height: calc(100vw / 1680 * 25)!important;
+     }
+   }
+   /deep/ .ant-spin-container {
+     margin-left: 0 !important;
+     margin-right: 0 !important;
+     width: 100% !important;
+   }
+   .backbtn {
+     margin-top: 3.125rem;
+     font-size: 1.375rem;
+     color: #6a6a6a;
+     .left {
+       font-weight: 600;
+       font-size: 1.6rem;
+     }
+     span:nth-child(2) {
+       font-size: 1.5rem;
+       color: #6a6a6a;
+       cursor: pointer;
+       // border-bottom: 0.0625rem solid #6a6a6a;
+       text-decoration: underline;
+     }
+   }
+   .footertip {
+     margin: calc(100vw / 1680 * 50) 0 calc(100vw / 1680 * 50);
+     font-size: 1.125rem;
+     font-family: MicrosoftJhengHeiRegular;
+     font-weight: 400;
+     color: #3a3a3a;
+   }
+   .footertip a {
+     text-decoration: underline;
+   }
+   .jump {
+     font-weight: 600;
+   }
+ }
+
+ @media only screen and (min-width: 1024px) {
+  #lv-noInfo {
+    display: none;
+    background-color: #f3f3f3;
+    font-size: calc(100vw / 1680 * 16);
+  }
+
+  #lvqq-record-back {
+    display: none;
+  }
+   .billList {
+     width: calc(100vw / 1680 * 1220)!important;
+     padding: 0!important;
+
+     .billList {
+      min-height: 43.75rem;
+      font-size: 1rem;
+      padding-right: 6.25rem;
+
+      .table {
+        margin-top: calc(100vw / 1680 * 18)!important;
+      }
+      /deep/ .ant-table-thead > tr > th  {
+        color: #3a3a3a;
+        font-weight: 500;
+        font-size: calc(100vw / 1680 * 18);
+        padding: 1rem!important;
+      }
+      .table /deep/ .ant-table-tbody tr {
+
+        // margin-left: calc(100vw / 1680 * -16)!important;
+      }
+      /deep/ .ant-table-tbody > tr > td {
+        padding: calc(100vw / 1680 * 15) calc(100vw / 1680 * 10)!important;
+        span{
+          // line-height: calc(100vw / 1680 * 18);
+        }
+      }
+      /deep/ .ant-spin-container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+      }
+      .backbtn {
+        margin-top: 3.125rem;
+        font-size: 1.375rem;
+        color: #6a6a6a;
+        .left {
+          font-weight: 600;
+          font-size: 1.6rem;
+        }
+        span:nth-child(2) {
+          font-size: 1.5rem;
+          color: #6a6a6a;
+          cursor: pointer;
+          // border-bottom: 0.0625rem solid #6a6a6a;
+          text-decoration: underline;
+        }
+      }
+      .footertip {
+        margin: 30px 0 50px;
+        font-size: 1.125rem;
+        font-family: MicrosoftJhengHeiRegular;
+        font-weight: 400;
+        color: #3a3a3a;
+      }
+      .footertip a {
+        text-decoration: underline;
+      }
+      .jump {
+        font-weight: 600;
+      }
+    }
+   }
+ }
+
+ @media only screen and (max-width: 1023px) {
+   .footertip {
+     padding: calc(100vw /320 * 15) 0 calc(100vw /320 * 10)!important;
+   }
+  #lv-noInfo {
+    display: block;
+    background-color: #f3f3f3;
+    font-size: calc(100vw / 320 * 16);
+    margin-bottom: 0;
+    margin-top: calc(100vw / 320 * 20);
+  }
+  #lvqq-record-back {
+    position: absolute;
+    left: calc(100vw /320 * 26);
+    top: calc(100vw /320 * 18);
+    display: block;
+    font-size: calc(100vw /320 * 14);
+  }
+  .billList {
+    background-color: #f3f3f3;
+    position: relative;
+    padding: calc(100vw /320 * 18) calc(100vw /320 * 22.5) calc(100vw /320 * 40)!important;
+    .ad {
+      margin: calc(100vw /320 * 20) 0 calc(100vw /320 * 20)!important;
+    }
+    .MBTable li {
+      margin-bottom: calc(100vw /320 * 25)!important;
+      .billItem {
+        padding: calc(100vw /320 * 20)!important;
+      }
+      .bigFont {
+        margin-bottom: calc(100vw /320 * 10)!important;
+      }
+      .thisBorder {
+        width: calc(100vw /320 * 225);
+        margin: 0 auto;
+      }
+      .btnDiv {
+        padding: calc(100vw /320 * 11) calc(100vw /320 * 22.5) !important;
+      }
+    }
+  }
+ }

@@ -1,0 +1,76 @@
+.billDiv {
+  padding: 40px 20px;
+  padding-top: 20px;
+  // background: #f3f3f3;
+
+  .ad {
+    background: #fff;
+    margin-bottom: 20px;
+  }
+
+  .billItem {
+
+    padding: 20px 0;
+    padding-top: 10px;
+
+  }
+
+  .bigFont {
+    font-size: 14px;
+    color: #3a3a3a;
+    margin-bottom: 8px;
+  }
+
+  .littleFont {
+    font-size: 14px;
+    color: #3a3a3a;
+    margin-bottom: 8px;
+
+    .inner {
+      display: inline-block;
+      width: 49%;
+    }
+
+  }
+}
+
+.thisBorder {
+  margin: 0 20px;
+}
+
+.btnDiv {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: $primary-color !important;
+
+  img {
+    width: 14px;
+    margin-left: 10px;
+  }
+}
+
+.otherTip {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 12px;
+
+
+}
+
+.thisTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a3a3a;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.thisFont {
+  color: $primary-color !important;
+  text-decoration: underline;
+  font-size: 13px;
+}
