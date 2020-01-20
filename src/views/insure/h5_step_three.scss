@@ -1,0 +1,23 @@
+#insuretab3 {
+  .insureitem {
+    .insurelable {
+      font-size: .9375rem;
+    }
+    &:nth-child(3) {
+      .beneficiary {
+        .benefi {
+          .benefiBox {
+            // background-color: red;
+            .header {
+              span {
+                width: 100%;
+              }
+            }
+
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -202,12 +202,12 @@
             <p class="header">
               <span>身故受益人</span>
             </p>
-            <div>
+            <div class="beneficiary" >
               <p v-for="(item,key) in beneficiaryType" :key="key" class="insurelable">
                 <span class="insurelabletitle">{{item.label}}</span>
                 <span class="insurelablecon">{{item.show_value?item.show_value:item.value}}</span>
               </p>
-              <div v-if="beneficiaryType.beneficiaryType.value!='01'">
+              <div v-if="beneficiaryType.beneficiaryType.value!='01'" class="benefi">
                 <p v-for="(item,key) in allocation" :key="key" class="insurelable">
                   <span class="insurelabletitle">{{item.label}}</span>
                   <span class="insurelablecon">{{item.show_value?item.show_value:item.value}}</span>
@@ -217,7 +217,7 @@
                     <p class="header">
                       <span>受益人({{num2Text(index+1)}})</span>
                     </p>
-                    <div v-if="arr.beneficiaryFactorList.relationToInsured.value != '04'">
+                    <div v-if="arr.beneficiaryFactorList.relationToInsured.value != '04'" >
                       <p v-for="(item,key) in arr.beneficiaryFactorList" :key="key" class="insurelable">
                         <span class="insurelabletitle">{{item.label}}</span>
                         <span class="insurelablecon">{{item.show_value?item.show_value:item.value}}</span>
@@ -2586,6 +2586,8 @@ export default {
 <style lang="scss" scoped>
 @import './index.scss';
 @import './h5_insure.scss';
+@import './h5_step_two.scss';
+@import './h5_step_three.scss';
 @media only screen and (min-device-width: 1024px) {
   html {
     font-size: 16px!important;
