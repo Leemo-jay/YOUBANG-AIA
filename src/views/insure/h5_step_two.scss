@@ -13,6 +13,15 @@
             line-height: normal;
           }
           .insureitem {
+           /deep/ .inputBox {
+            .ant-input {
+              padding-bottom: .1875rem;
+            }
+            .bgTest  {
+            top: 0!important;
+
+            }
+           }
             .footertip {
               margin-bottom: 1.25rem!important;
               font-size: .75rem!important;

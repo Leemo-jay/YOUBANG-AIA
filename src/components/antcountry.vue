@@ -3,7 +3,7 @@
 		<span class="searchCountry" @click="visible=true">
 			<a-icon type="search" class="searchBtn" />搜尋國籍
 		</span>
-		<a-select style="width: 100%" :placeholder="show_value || placeholder" :class="show_value?'countryChecked':''" :value="show_value">
+		<a-select style="width: 100%" :placeholder="show_value || placeholder" :class="show_value?'countryChecked':''" :value="show_value"  @dropdownVisibleChange=" chose_h5(options)">
 			<!-- <div slot="dropdownRender" slot-scope="menu">
 			</div> -->
 			<select-icon slot="suffixIcon" />
@@ -12,6 +12,7 @@
 				{{item.name}}
 			</a-select-option>
 		</a-select>
+			<PopupPicker class='thisThis' title="demo"  :data="poupValue" v-model="poupValue1" :columns="1" :show.sync="show_picker" show-name @on-change="h5_get_select_value" ></PopupPicker>
 		<p class="tip">{{tip}}</p>
 		<a-modal :visible="visible" :closable="closable" style="text-align: center;">
 			<p class="mtitle">選擇國籍</p>
@@ -28,6 +29,8 @@
 </template>
 
 <script>
+import { PopupPicker } from 'vux'
+
 const flag = {
 	template: `
 	<svg t="1570848075961" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2915" width="48" height="48"><path d="M259.38971 374.52151c-11.954677 0-23.909355-17.932016-11.954677-35.864032L492.505917 9.903852c5.977339-11.954677 17.932016-11.954677 29.886694-5.977338l5.977338 5.977338 245.070885 328.753626c11.954677 11.954677 0 35.864032-11.954677 35.864032H259.38971z m502.096447 274.957578c11.954677 0 23.909355 17.932016 11.954677 35.864032l-245.070885 328.753625c-5.977339 11.954677-17.932016 11.954677-29.886693 5.977339l-5.977339-5.977339-245.070884-328.753625c-11.954677-11.954677 0-35.864032 11.954677-35.864032h502.096447z" p-id="2916" fill="#727272"></path></svg>
@@ -64,7 +67,8 @@ export default {
 		}
 	},
 	components: {
-		selectIcon
+		selectIcon,
+		PopupPicker
 	},
 	data() {
 		return {
@@ -72,6 +76,17 @@ export default {
 			grey: "搜尋國籍關鍵詞",
 			options: [],
 			data: [],
+			poupValue1:[],
+				poupValue: [
+					{
+          name: '中国',
+          value: 'china',
+        }, {
+          name: '美国',
+          value: 'USA',
+        },
+				],
+			show_picker:false,
 			visible: false,
 			countryName: '',
 			pagination: false,
@@ -84,6 +99,29 @@ export default {
 		}
 	},
 	methods: {
+			chose_h5(value) {
+			this.show_picker = true
+			value.map(item=>{
+				item.value = item.code
+			})
+			this.poupValue = value
+
+			console.log('claue',value)
+
+		},
+		h5_get_select_value(value) {
+			console.log(value)
+					this.poupValue.map(item => {
+			this.$emit('update:value', value[0])
+
+						if(item.value == value[0]) {
+								this.$emit('update:show_value', item.name)
+						}
+					})
+			this.$emit('update:hasShowError', false)
+
+
+		},
 		emitEmpty() {
 			this.$refs.countryNameInput.focus()
 			this.countryName = ''

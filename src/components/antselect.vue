@@ -88,10 +88,12 @@ export default {
 	watch: {},
 	methods: {
 		chose_h5(value) {
+			console.log('hha',value)
 			this.show_picker = true
 			this.poupValue = value
 		},
 		h5_get_select_value(value) {
+			console.log(value)
 					this.poupValue.map(item => {
 			this.$emit('update:value', value[0])
 
