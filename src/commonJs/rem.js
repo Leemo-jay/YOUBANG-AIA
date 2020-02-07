@@ -44,6 +44,7 @@ function setFontSize() {
 //刷新不需要走滚动条宽度
 function setFontSizeRef() {
   let mwidth =document.body.clientWidth
+  console.warn(mwidth)
   setRem(mwidth)
 }
 setFontSizeRef()

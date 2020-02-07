@@ -102,6 +102,7 @@ export default {
   created() {
     // this.$store.state.customer = this.$longData(2, 'state')
     // this.$longData(1, 'token') ? this.getUserInfo() : ''
+    console.warn("2020.2.07")
     this.$longData(1, "token") && sessionStorage.getItem("token")
       ? this.$store.dispatch("getUserInfo")
       : "";
