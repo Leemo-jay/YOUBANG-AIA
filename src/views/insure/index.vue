@@ -346,18 +346,21 @@
               <p class="state fl">信用卡卡號</p>
               <input class="bank-input bank" :class="{redbtbd:ifBankError}" v-model="item.value" :placeholder="index==0?'請填寫卡號':''" v-for="(item,index) in bankNumList" :key="index" maxlength="4" @blur="checkBankLength(index)" :id="setID(index)" @input="chekcIF4($event.target.value,index)">
               <p class="errorTip fl" v-if="ifBankError">請填寫正確信用卡卡號</p>
-              <p class="state fl">有效期</p>
+              <p class="state fl" id="validity">有效期</p>
               <div class="selectbox" id="four-date-select">
                 <div class="select">
-                  <a-select style="border: 80%;" @change="handleMonthChange" placeholder="請選擇" v-model="month" :getPopupContainer="triggerNode => triggerNode.parentNode">
+                  <a-select style="border: 80%;" @change="handleMonthChange" placeholder="請選擇"  @dropdownVisibleChange=" chose_h5(monthList,'m')" v-model="month" :getPopupContainer="triggerNode => triggerNode.parentNode">
                     <select-icon slot="suffixIcon" />
 
                     <a-select-option :value="item" v-for="(item,index) in monthList" :key="index">{{item}}</a-select-option>
+
                   </a-select>
+			<PopupPicker class='thisThis' title="demo"  :data="poupValue" v-model="poupValue1" :columns="1" :show.sync="show_picker" show-name @on-change="h5_get_select_month" ></PopupPicker>
+
                   <span>月</span>
                 </div>
                 <div class="select">
-                  <a-select style="width: 80%;" @change="handleYearChange" placeholder="請選擇" v-model="year" :getPopupContainer="triggerNode => triggerNode.parentNode">
+                  <a-select style="width: 80%;" @change="handleYearChange" placeholder="請選擇" @dropdownVisibleChange=" chose_h5(yearList,'y')" v-model="year" :getPopupContainer="triggerNode => triggerNode.parentNode">
                     <select-icon slot="suffixIcon" />
 
                     <a-select-option :value="item" v-for="(item,index) in yearList" :key="index">{{item}}</a-select-option>
@@ -461,6 +464,8 @@ import codeVerify from '@/views/loginIn/child/codeVerify.vue'
 import toggle from "@/components/toggle.vue";
 import regObj from '@/commonJs/regRule.js'
 import antoccupation from '@/components/antoccupation.vue'
+import { PopupPicker } from 'vux'
+
 import {
   longData,
   codeHidden
@@ -500,9 +505,25 @@ export default {
     selectIcon,
     toggle,
     antoccupation,
+    PopupPicker
   },
   data() {
     return {
+      monthOrYear:"",
+      poupValue1:[],
+				poupValue: [
+					{
+          name: '中国',
+          value: 'china',
+        }, {
+          name: '美国',
+          value: 'USA',
+        },
+				],
+			show_picker:false,
+
+
+
       tabArr: [{
             tab_name: '投保資格確認'
           },
@@ -801,6 +822,8 @@ export default {
     // }
   },
   methods: {
+
+    
     formatBirthday(val) {
       return val
     },
@@ -1132,6 +1155,25 @@ export default {
       }
 
     },
+
+
+
+  chose_h5(value,date) {
+      console.log('hha',value)
+      this.monthOrYear = date
+			this.show_picker = true
+			this.poupValue = value
+		},
+		h5_get_select_month(value) {
+      if(this.monthOrYear == 'm') {
+        this.month = value[0]
+      }else {
+         this.year = value[0]
+      }
+      this.checkIfBefore()
+     
+
+		},
     checkIfBefore() {
       if (this.month != undefined && this.year != undefined) {
         let bol = moment(`${this.year}-${this.month}`).isBefore(new Date());
@@ -2588,6 +2630,8 @@ export default {
 @import './h5_insure.scss';
 @import './h5_step_two.scss';
 @import './h5_step_three.scss';
+@import './h5_step_four.scss';
+
 @media only screen and (min-device-width: 1024px) {
   html {
     font-size: 16px!important;
