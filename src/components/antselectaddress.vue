@@ -36,7 +36,7 @@
       @select="select"
       style="width: 15rem"
       @click.native="getCity(2)"
-      class="select_opt"
+      class="select_opt ls"
       placeholder="請選擇行政區"
       :getPopupContainer="triggerNode => triggerNode.parentNode"
        @dropdownVisibleChange=" chose_h5(options2,2)"
@@ -412,6 +412,9 @@ export default {
         }
       }
 
+    }
+    .ls {
+      margin-right: .5rem
     }
   }
 }

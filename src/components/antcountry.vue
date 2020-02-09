@@ -1,5 +1,6 @@
 <template>
 	<div class="commentBox commselectBox">
+	
 		<span class="searchCountry" @click="visible=true">
 			<a-icon type="search" class="searchBtn" />搜尋國籍
 		</span>
@@ -15,6 +16,12 @@
 			<PopupPicker class='thisThis' title="demo"  :data="poupValue" v-model="poupValue1" :columns="1" :show.sync="show_picker" show-name @on-change="h5_get_select_value" ></PopupPicker>
 		<p class="tip">{{tip}}</p>
 		<a-modal :visible="visible" :closable="closable" style="text-align: center;">
+			 <img
+        src="@/assets/youbang/X.png"
+        @click="handleCancel"
+        class="close_img"
+        style="display:none"
+      />
 			<p class="mtitle">選擇國籍</p>
 			<a-input class="components-input" :placeholder="grey" v-model="countryName" ref="countryNameInput">
 				<a-icon slot="prefix" type="search" />
@@ -208,14 +215,15 @@ export default {
 
 <style lang="scss" scoped>
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape){
-.commselectBox .searchCountry{
-	right: -15rem!important;
-}
-}
+
+// @media only screen
+// and (min-device-width : 768px)
+// and (max-device-width : 1024px)
+// and (orientation : landscape){	
+// .commselectBox .searchCountry{
+// 	right: -15rem!important;
+// }
+// }
 
 
 .commselectBox {
@@ -275,6 +283,60 @@ and (orientation : landscape){
 }
 </style>
 <style lang="scss">
+@media screen and (max-width:1023px) {
+  	.ant-modal-wrap {
+		  .ant-modal {
+			  top: 1.375rem;
+			  width: 17.125rem!important;
+			  .ant-modal-content {
+				  .ant-modal-footer {
+					  display: none;
+				  }
+				  .ant-modal-body {
+					.close_img {
+						display: block!important;
+						float: right;
+						width: 1.25rem;
+						height: 1.25rem;
+						margin-top: -1rem
+					}
+					  .mtitle {
+						  font-size: 1rem;
+						  margin-top: 0;
+					  }
+					  .components-input {
+						  width: 14.875rem!important;
+						  height: 1.875rem!important;
+						  line-height: 1.875rem;
+						  .ant-input {
+							  padding-left: 2.5rem;
+							height: 1.875rem!important;
+
+						  }
+					  }
+					  .ant-table-wrapper {
+						  .ant-table-content {
+								.ant-modal-footer {
+									display: none!important
+								}
+									  tr {
+										  th {
+											  height: 1.875rem;
+											  line-height: 1.875rem;
+											  padding-top: 0;
+											  padding-bottom: 0;
+											  font-size: 1rem;
+										  }
+									  }
+						  }
+					  }
+				  }
+			  }
+		  }
+	  }
+}
+
+
 .ant-modal-mask {
   background: #fff;
 }
