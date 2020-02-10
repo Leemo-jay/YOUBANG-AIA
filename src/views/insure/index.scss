@@ -1278,11 +1278,12 @@
   
   .step_three {
     .insureitem {
-      margin-bottom: 1.875rem;
+      margin-bottom: 0.625rem;
     }
   
     .insurelable {
-      margin: 0.625rem 0 0 0;
+      margin: 0;
+      line-height: 1.75rem;
       // font-size: 1rem!important;
   
       .header {
