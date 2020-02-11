@@ -203,21 +203,42 @@ export default {
       this.h5_idx = index
 			this.show_picker = true
       this.poupValue = value
-      console.log(value)
     },
     	h5_get_select_value(value) {
+        console.log(value,this.poupValue)
+        
 					this.poupValue.map(item => {
 					if (item.areaCode == value[0]) {
-            console.log('red')
-
+            console.log(item,'jsjsj')
             if (this.h5_idx == 1) {
-              // this.clickOne(value[0], item.name);
-            console.log('red11')
+              this.code.c1 = value[0]
               this.clickOne(item)
             } else if (this.h5_idx == 2) {
+              this.code.c2 = value[0]
+
               this.clickTwo(item);
             } else if (this.h5_idx == 3) {
+              let clon = JSON.stringify(JSON.parse(value))
+              console.log(value[0],'item3')
+              this.code.c3 = value[0]
+
+
               this.select(item.value,item,'h5')
+            this.$emit("update:postcode", item.postalCodePrefix);
+            this.info.code = item.postalCodePrefix
+            this.info.address = `${this.city.c1}/${this.city.c2}/${this.city.c3}`;
+          
+            this.info.values = [];
+             for (var i = 0; i < 3; i++) {
+              //  console.log(i)
+          this.info.values.push(this.code[`c${i+1}`]);
+
+
+             }
+            this.info.values.join(",");
+
+             console.log('info-addr',this.info)
+            this.$emit("get_info", this.info);
             }
         }
 					})
@@ -355,11 +376,14 @@ export default {
     clickOne(record) {
       console.log(`record-----111111111`, record);
       this.handleProvinceChange(record.areaCode);
+      this.city.c1 = record.name
       this.$emit("updateOne", record);
     },
     clickTwo(record) {
       console.log(`record---------22222222`, record);
       this.handleProvinceChange(record.areaCode);
+      this.city.c2 = record.name
+
       this.$emit("updateTwo", record);
     }
     // clickThree(record) {
@@ -414,7 +438,8 @@ export default {
 
     }
     .ls {
-      margin-right: .5rem
+      margin-right: .5rem;
+      margin-top:.35rem
     }
   }
 }

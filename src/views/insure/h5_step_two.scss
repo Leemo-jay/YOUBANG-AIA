@@ -14,14 +14,69 @@
           }
           .insureitem {
             &:nth-of-type(2) {
+              // background-color: red;
+              .header {
+                padding-top: .6rem;
+                margin-bottom: 0!important;
+
+              }
              /deep/ .form {
+               margin-top: .6rem;
                 .form_info {
+                  margin-top: 0;
+                  .lis:nth-child(1) {
+                    .linefeeditem {
+                      margin-top: 0!important;
+
+                    }
+                  } 
                   .lis:nth-child(2) {
-                    margin-top: 0
+                    margin-top: 0;
+                    .addressSelect {
+                      margin-top: .7rem!important;
+                      .ant-form-item-label {
+                      padding-bottom: .5rem!important;
+                      }
+                    }
                   }
+                  .lis:nth-child(3) {
+                    .linefeeditem {
+                      margin-top: .2rem!important;
+                      .inputBox {
+                        .tip {
+                          display: inline-block;
+                          line-height: 1rem;
+                          margin-top: .5rem;
+                        }
+                      }
+                    }
+                  }
+                  
                 }
               }
             }
+            &:nth-of-type(3) {
+              .header {
+                margin-bottom: .3rem!important;
+              }
+              .form {
+                &:nth-child(1) {
+                  .form_info {
+                    background-color: red;
+                  }
+                  /deep/ .linefeeditem{
+                    // background-color: red;
+                    margin-top: 0!important;
+                  }
+
+                }
+               }
+               .addbtn {
+                //  background-color: red;
+                margin: .3rem 0 2rem 0;
+               }
+            }
+
            /deep/ .inputBox {
             .ant-input {
               padding-bottom: .1875rem;
@@ -53,18 +108,66 @@
               }
             }
             .benefiBox  {
+              margin-top: 1.5rem;
               padding: 0;
               width: 20rem;
               margin-left: -1.375rem;
               .benefiCon {
                 width: 19.8rem;
                 padding: 1.275rem;
+                padding-top: 2.125rem;
+                .header {
+                  padding-top: 0;
+                  padding-bottom: .2rem;
+                }
                .form {
                
                   /deep/  .form_info {
                     .lis{
+                      &:nth-child(2) {
+                        margin-top:0;
+                        margin-bottom: 3rem;
+                        .linefeeditem {
+                          margin-top:0!important;
+                          .ant-form-item-label {
+                            padding-bottom: .5rem!important;
+                          }
+
+                        } 
+                      }
+                      &:nth-child(3) {
+                        .linefeeditem {
+                          .ant-form-item-control-wrapper {
+                            float: right;
+                            .ant-form-item-control {
+                              margin-bottom: 0;
+                              .commselectBox {
+                                // background-color: red;
+                                width: auto!important;
+                              }
+                            }
+                          }
+                        }
+                      }
+                      &:nth-child(5) {
+                        .timeH5 {
+                          .formDiv {
+                            // background-color: red;
+                            .titleFont {
+                              &::before{
+                                content: "*";
+                                color: #d81f49;
+                                font-size: .875rem;
+                                margin-right: .125rem;
+                              }
+                            }
+                          }
+                        }
+                       }
+
                       .commselectBox {
                         .ant-select-selection{
+                          width: 9.8rem!important;
                             height: 2.25rem;
                             line-height: 2.25rem;
                           .ant-select-selection__rendered {
@@ -85,12 +188,15 @@
                             margin-right: .4rem;
                           }
                           .ant-form-item-control-wrapper{
-                            width:9.8125rem !important;
+                            width:8.8125rem !important;
+                            float: right;
                             .commselectBox {
-                              width:9.8125rem !important;
-
+                              width:8.8125rem !important;
+                              .searchCountry {
+                                font-size: .875rem;
+                              }
                               .ant-select-selection {
-                                width: 9.8125rem!important;
+                                width: 8.8125rem!important;
                                 height: 2.25rem;
                                 line-height: 2.25rem;
       
@@ -111,6 +217,8 @@
                           .commentBox  {
                             .searchCountry {
                               right: 0;
+                              top: -2.5rem;
+                              font-size: .875rem;
                             }
                           }
                         }
@@ -120,10 +228,16 @@
                 }
               }
               .form:nth-of-type(2) {
+                // background-color: red;
                 /deep/ .form_info {
+                  margin-top: 1.3rem;
                   .lis {
                     .linelabelitem,.linefeeditem {
+                      .ant-form-item-label {
+                        height: 2.375rem
+                      }
                       .ant-form-item-label,.ant-form-item-control-wrapper {
+
                         display: block;
                         width: 100%;
                       }
@@ -154,8 +268,17 @@
                 }
               }
               .form:nth-of-type(3) {
+                // background-color: red;
                 /deep/ .form_info {
                   .lis {
+                    .linefeeditem {
+                      .ant-form-item-control-wrapper {
+                        float:none;
+                        .ant-form-item-control {
+                          margin-bottom: .3rem;
+                        }
+                      }
+                    }
                     .switch {
                       .lb,.left {
                         border: .0625rem solid #ccc;
@@ -189,14 +312,32 @@
               }
            /deep/ .form:nth-of-type(4) {
               /deep/ .form_info {
+                margin-top: 0!important;
                 .lis {
                   &:nth-child(1) {
                     .linefeeditem {
+                margin-top: 0!important;
+
                       .ant-form-item-control-wrapper {
                         width: 100%!important;
                       }
                     }
                   }
+                  &:nth-child(2) {
+                    margin-bottom: 0;
+                    .linefeeditem  {
+                      .ant-form-item-control-wrapper {
+                        .ant-form-item-control {
+                          margin-bottom: 0;
+                        }
+                      }
+                    }
+                  } 
+                  &:nth-child(3) {
+                    .linefeeditem  {
+                      margin-top: 1rem!important;
+                    }
+                  } 
                 }
               }
             }
@@ -218,6 +359,9 @@
                 margin-bottom: 0;
                 .insurelable {
                   font-size: .9375rem;
+                  &:nth-child(2) {
+                    margin-top: 0;
+                  }
                 }
               }
             }

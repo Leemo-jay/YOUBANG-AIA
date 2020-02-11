@@ -13,6 +13,7 @@
     <div v-else>
       <a-radio-group @change="onChange" :value="value" class="radio">
         <a-radio-button v-for="(item,index) in options" :key="index" :value="item.value" class="buttoms">{{item.name}}</a-radio-button>
+        
       </a-radio-group>
     </div>
   </div>
@@ -28,7 +29,7 @@ export default {
       }
     },
     value: {
-      required: false
+      required: false,
     },
     hasShowError: {
       required: false
