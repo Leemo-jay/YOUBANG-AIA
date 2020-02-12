@@ -6,9 +6,18 @@
         min-width: auto!important;
         .insureitem {
             &:nth-of-type(1) {
-                // background:red
+                margin-bottom: .5rem;
+                .header {
+                    margin-bottom: .8rem!important;
+                }
                 .insurelable {
                     font-size: .9375rem;;
+                    &:nth-child(1) {
+                        margin-top: 0;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 0;
+                    }
                 }
             }
            /deep/ &:nth-of-type(2) {
@@ -16,11 +25,11 @@
                .way {
                    position: relative;
                 margin-top: 0;
-
+                padding-bottom: 2.8rem;
                     .red {
-                        height: 1.75rem;
-                        line-height: 1.75rem;
-                        width: 6.125rem;
+                        width: 8rem;
+                        height: 2.25rem;
+                        line-height: 2.25rem;
                         font-size: .875rem!important;
                     }
                     .tips {
@@ -32,7 +41,9 @@
                             float: none;
                             display: inline-block;
                             .state {
-                        font-size: .9375rem;
+                                display: inline-block;
+                                line-height: 1.3rem;
+                                font-size: .9375rem;
                                 
                             }
                         }
@@ -40,6 +51,7 @@
                             width: 12rem;
                             line-height: 1rem;
                             .searchBank {
+                                margin-top: .7rem;
                                 font-size: .875rem;
                                 border-radius: 0;
                                 span {
@@ -58,6 +70,18 @@
                         // min-width: 5.625rem;
                         margin-top: .5rem;
                         font-size: .9375rem;
+                        &:nth-of-type(2) {
+                            margin-top: 2.125rem;
+                            // background-color: red;
+                        }
+                        &:nth-of-type(3) {
+                            margin-top:.6rem
+                        }
+                        &:nth-of-type(5) {
+                            margin-top: 0;
+                            // background-color: red;
+
+                        }
                     }
                     .bank-input {
                         font-size: .9375rem!important;
@@ -114,7 +138,7 @@
                        
                     }
                     #four-last-num {
-                        margin-top: 0;
+                        margin-top: 0.8rem;
                     }
                 }
             }
@@ -122,6 +146,8 @@
                 // background-color: red;
                 .way {
                     margin-top: 0;
+                    padding-bottom: 2.9rem;
+                    // background-color: red;
                     .way-item {
                         height: 2.125rem;
                         line-height: 2.125rem;
@@ -133,15 +159,21 @@
                 }
             }
             &:nth-of-type(4) {
+                // background-color: red;
                 margin-bottom: 3rem;
+                .header {
+                    margin-bottom: .7rem!important;
+                }
                 .referrer {
+                    margin-top: 0;
                     font-size: .875rem;
                 }
                 .bank-input {
+                    margin-top: 1rem;
                     &::placeholder {
                         font-size: .875rem;
                     }
-                    margin-top: 0;
+                    // margin-top: 0;
                     font-size: .875rem;
                 }
             } 
@@ -149,6 +181,39 @@
         .infoList {
             width: 20rem;
             margin-left: -1.375rem;
+        }
+    }
+
+    /deep/ .bankList {
+        position: fixed!important;
+        background-color:#fff!important;
+        padding: 3rem 0 3rem!important;
+        height: auto!important;
+        .contentbox {
+            padding: 0 1.25rem!important;
+            .title {
+                margin-top: 1.5rem;
+                font-size: 1rem!important;
+            }
+            .close {
+                
+                top: 0!important;
+                right: 1.4rem!important;
+                height: auto;
+                .anticon {
+                font-size: 1.5rem;
+                }
+            }
+            .box {
+                margin-top: 0rem!important;
+                .name {
+                    font-size: .75rem!important;
+                    padding: .6875rem .3125rem!important;
+                    display: flex;
+                    line-height: .95rem!important;
+                    align-items: center;
+                }
+            }
         }
     }
 
