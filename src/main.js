@@ -57,6 +57,7 @@ Vue.prototype.$bus = vm
 // 全局变量
 Vue.prototype.$baseUrl = CONFIG.baseUrl
 
+
 // Vue.use(ToastPlugin, {position: 'middle',time: 100000})
 
 Vue.mixin({

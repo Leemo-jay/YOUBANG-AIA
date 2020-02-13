@@ -111,6 +111,7 @@ export default {
   watch: {
     "item.value": {
       handler: function (val) {
+        // console.log(item.type)
           console.log('changeItemValue=========',val)
 
         var formatDate = function () {
@@ -124,13 +125,17 @@ export default {
           }
         }
         if (this.item.type == "birthday") {
-          console.log('birthdagy',this.item,val)
+        
           if (val && val.length == 10) {
             this.$set(this.item, "transformvalue", `${formatDate()}${val.substr(4)}`)
             this.$set(this.item, "show_value", `${parseInt(val.substr(0, 4)) - 1911}/${val.substr(5, 7)}/${val.substr(8)}`)
+            console.log(this.item,'000000')
+
           } else {
-            // this.$set(this.item, "transformvalue", '')
-            // this.$set(this.item, "show_value", '')
+            this.$set(this.item, "transformvalue", `${val.substr(0, 3)}-${val.substr(3, 2)}-${val.substr(5,2)}`)
+            this.$set(this.item, "show_value", `${val.substr(0, 3)}/${val.substr(3, 2)}/${val.substr(5,2)}`)
+          console.log(`${val.substr(0, 3)}/${val.substr(3, 2)}/${val.substr(5)}`,'red')
+
           }
         }
         if (this.item.rules == 'areaDetail') {
@@ -178,6 +183,7 @@ export default {
       }
     },
     update(value) {
+      console.log('@update="update"',value)
       this.item.value = formatmyyear(value)
     },
     updateSelect(val) {
@@ -190,7 +196,8 @@ export default {
   mounted() {
     let that = this
     window.addEventListener('resize', function () {
-        that.clientWidth = document.body.clientWidth
+        that.clientWidth = document.body.clientWidthc
+        console.log(that.clientWidth)
     })
 
   },
