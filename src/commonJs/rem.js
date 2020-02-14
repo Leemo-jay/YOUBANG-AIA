@@ -14,17 +14,13 @@ function setRem(mwidth) {
   // htmlDom.style.fontSize = htmlWidth / 20 + 'px';
   let htmlDom = document.getElementsByTagName('html')[0]
   if(mwidth > 1023){
-    //console.log(mwidth)
     htmlDom.style.fontSize = (16 * (mwidth / 1680)) + 'px'
-    // var route = window.location.pathname
-    // if(route == '/rwd/pages/home'){
-    //   htmlDom.style.fontSize = '16px'
-    // }else{
-    //   htmlDom.style.fontSize = (16 * (mwidth / 1680)) + 'px'
-    // }
-  }else {
-    //console.log(20 * (mwidth / 640))
-    htmlDom.style.fontSize = (20 * (mwidth / 640)) > 48 ? 30 + 'px' : (16  * (mwidth / 320)) + 'px';
+  }else{
+    if(document.body.clientWidth <= document.body.clientHeight){
+      htmlDom.style.fontSize = (16  * (mwidth / 320)) + 'px';
+    }else{
+      htmlDom.style.fontSize = (16 * (mwidth / 568)) + 'px';
+    }
   }
 }
 function getScrollWidth() {
@@ -44,7 +40,6 @@ function setFontSize() {
 //刷新不需要走滚动条宽度
 function setFontSizeRef() {
   let mwidth =document.body.clientWidth
-  console.warn(mwidth)
   setRem(mwidth)
 }
 setFontSizeRef()
