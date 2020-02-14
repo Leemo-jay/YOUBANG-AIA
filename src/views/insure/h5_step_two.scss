@@ -14,6 +14,57 @@
             line-height: normal;
           }
           .insureitem {
+            .benefiCon {
+             /deep/ .form {
+              &:nth-of-type(1)
+              &:nth-of-type(1) {
+                .form_info {
+                  .lis {
+                    &:nth-child(4) {
+                      .linefeeditem {
+                        margin-top:0.2rem!important;
+                      }
+                    }
+                    &:nth-child(5) { 
+                      .timeH5 {
+                        .formDiv {
+                          padding-top: 0.2rem!important;
+                        }
+                      }
+                    }
+                  }
+                }
+              } 
+              &:nth-of-type(3) { //同
+                .form_info {
+                  margin-top: 1.875rem;
+                }
+              }
+                &:nth-of-type(4) {
+                  .form_info {
+                    .lis:nth-child(2) {
+                      .linefeeditem {
+                      .ant-form-item-control-wrapper {
+                        .ant-form-item-control {
+                          .ant-form-item-children {
+                            .addr_select {
+                              .select_opt {
+                                &:nth-of-type(1) {
+                                  width: 11.3rem!important;
+                                  margin-bottom: 1.1rem;;
+                                }
+
+                              }
+                            }
+                          }
+                        }
+                      }
+                      }
+                    }
+                  }
+                }
+              }
+            }
             &:nth-child(1) {
               .header {
                 margin-bottom: .8rem!important;
@@ -87,7 +138,7 @@
                         .tip {
                           display: inline-block;
                           line-height: 1rem;
-                          margin-top: .5rem;
+                          margin-top: .9rem;
                         }
                       }
                     }
@@ -98,20 +149,62 @@
             }
             &:nth-of-type(3) {
               .header {
+                padding-top: 1rem!important;
                 margin-bottom: .3rem!important;
               }
-              .form {
-                &:nth-child(1) {
+             /deep/ #two-two {
                   .form_info {
-                    background-color: red;
-                  }
-                  /deep/ .linefeeditem{
-                    // background-color: red;
                     margin-top: 0!important;
                   }
-
-                }
                }
+               .addBenef {
+               /deep/ #two-three {
+                 .form_info {
+                   margin-top: 0!important;
+                   .lis {
+                     .linefeeditem {
+                       margin-top: 0!important;
+                     }
+                   }
+                 }
+               }
+               .benefiBox {
+                .benefiCon {
+                   padding-top: 2.125rem!important;
+                   padding-left: 1.5rem!important;
+                   .header {
+                     padding-top: 0!important;
+                   }
+                  .form {
+                   &:nth-of-type(1) {
+                    /deep/ .form_info {
+                         margin-top: 1.2rem;
+                         .lis {
+                           &:nth-child(1) {
+                             .linefeeditem {
+                               margin-bottom: 0.5rem;
+                             }
+                           }
+                           &:nth-child(3) {  //国籍
+                            .linefeeditem {
+                              margin-bottom:0.2rem;
+                            }
+                          }
+                           &:nth-child(4) {  //身份证号
+                           .linefeeditem {
+                             margin-top: 0;
+                             .ant-form-item-label {
+                               padding-bottom :.5rem
+                             }
+                           }
+                           }
+                         }
+                       }
+                     }
+                   }
+                 }
+               }
+              }
                .addbtn {
                 //  background-color: red;
                 margin: .3rem 0 2rem 0;

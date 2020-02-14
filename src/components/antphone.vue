@@ -263,7 +263,7 @@ export default {
 				width: .2rem!important
 			}
 			&:nth-child(5) {
-				width: 6.375rem!important
+				width: 6.175rem!important
 			}
 
 		}

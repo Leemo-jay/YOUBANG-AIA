@@ -61,7 +61,9 @@
       .price {
         float: left;
         font-size: .8125rem;
-        margin:0 1rem 0 1.0625rem;
+        // margin:0 1rem 0 1.0625rem;
+        width: 7.1875rem;
+        margin: unset;
         .pricemount {
           font-size:1rem
         }
