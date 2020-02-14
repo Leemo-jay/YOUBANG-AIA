@@ -1,0 +1,59 @@
+@media screen and (max-width:1023px) {
+    .rightDiv{
+        .insure{
+            .step_five{
+                .insuresuccess{
+                    font-size: 1.375rem;
+                    font-weight: 600;
+                    color: #161616;
+                    padding-top: 1.4rem;
+                    padding-bottom: 0.75rem;
+                    line-height: 2.25rem;
+                }
+                .insurelable{
+                    font-size: 0.9375rem;
+                    color: #3a3a3a;
+                    line-height: 1.75rem;
+                    margin-top: 0rem;
+                }
+                .jumpbtn{
+                    width: 17.1875rem;
+                    height: 2.6875rem;
+                    font-size: 1.0625rem;
+                    line-height: normal;
+                    margin: 2.125rem 0 3.125rem;
+                }
+                
+            }
+        }
+        .imgcarousel{
+            padding-bottom: 1.875rem;
+        }
+        .swiperPC{
+            display: none;
+        }
+        .swiperMB{
+            display: block;
+        }
+        .swiper-container{
+            padding-bottom: 1.75rem;
+        }
+        .swiperMB >>> .swiper-pagination-bullets{
+            bottom: 0rem;
+        }
+        .swiperMB >>> .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 0.625rem;
+                height: 0.625rem;
+                background: none;
+                border: 0.0625rem solid #d81f49;
+            }
+            .swiper-pagination-bullet-active{
+                background: #d81f49;
+            }
+        }
+        .swiper-slide img{
+            width: 100%;
+        }
+    }
+}
