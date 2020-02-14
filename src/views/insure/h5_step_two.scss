@@ -4,7 +4,8 @@
     .rightDiv {
 
       .insure {
-        .step_two {
+        width: 20rem;
+        #insuretab2 {
           .footerphone {
             font-size: .875rem!important;
           }
@@ -13,29 +14,69 @@
             line-height: normal;
           }
           .insureitem {
+            &:nth-child(1) {
+              .header {
+                margin-bottom: .8rem!important;
+              }
+              .two_info {
+                margin-bottom: 0;
+                .insurelable {
+                  font-size: .9375rem;
+                  display: block;
+                  line-height: 1.5rem;
+                  &:nth-child(2) {
+                    margin-top: 0!important;
+                  }
+                }
+              }
+            }
             &:nth-of-type(2) {
               // background-color: red;
               .header {
-                padding-top: .6rem;
+                padding-top: 1rem;
                 margin-bottom: 0!important;
 
               }
              /deep/ .form {
-               margin-top: .6rem;
+               margin-top: .7rem!important;
                 .form_info {
-                  margin-top: 0;
+                  margin-top: 0!important;
                   .lis:nth-child(1) {
                     .linefeeditem {
                       margin-top: 0!important;
+                      .ant-form-item-label {
+                        padding-bottom: .5rem!important;
+                      }
 
                     }
                   } 
                   .lis:nth-child(2) {
-                    margin-top: 0;
+                    margin-top: 0!important;
                     .addressSelect {
                       margin-top: .7rem!important;
                       .ant-form-item-label {
                       padding-bottom: .5rem!important;
+                      }
+                      .ant-form-item-control-wrapper {
+                        .ant-form-item-control {
+                          #chose_address {
+                        .add_input {
+                          margin-right: .6375rem!important;
+                        }
+                        .select_opt {
+                          width: 8rem!important;
+                          &:nth-of-type(1) {
+                            width: 11.5625rem!important;
+                            margin-bottom: 1rem;
+
+                          }
+                          &:nth-of-type(2) {
+                            margin-right: .9375rem!important;
+                          }
+                        }
+
+                          }
+                        }
                       }
                     }
                   }
@@ -172,7 +213,7 @@
                             line-height: 2.25rem;
                           .ant-select-selection__rendered {
                             height: 2.25rem;
-                            line-height: 2.25rem;
+                            line-height: 2.25rem!important;
                             .ant-select-selection__placeholder {
                               font-size: .875rem;
                             }
@@ -354,17 +395,7 @@
                 }
               }
             }
-            &:nth-child(1) {
-              .two_info {
-                margin-bottom: 0;
-                .insurelable {
-                  font-size: .9375rem;
-                  &:nth-child(2) {
-                    margin-top: 0;
-                  }
-                }
-              }
-            }
+
             &:nth-child(2) {
               /deep/.form {
                 .form_info {
@@ -378,3 +409,262 @@
     }
   }
 }
+
+// @media screen and (min-width:1024px) {
+  .rightDiv {
+    .insure {
+      width: 34.15rem;
+    }
+  }
+  .step_two {
+      //底部电话
+      .footerphone {
+        margin: 3rem 0!important;
+      }
+    .insureitem  {
+     
+      //增加受益人
+      .benefiBox {
+        width: 40rem;
+        margin-top: 3.9rem;
+        padding-top: 2.3125rem;
+        padding-left: 2.0625rem;
+        padding-bottom: 3.4375rem;
+        .benefiCon {
+          width: 31.4375rem;
+          .header {
+            padding-top: 0;
+          }
+         /deep/ .form {
+            &:nth-of-type(1) {
+              //受益人中的下拉
+              .commselectBox {
+                .ant-select {
+                  height: 3rem;
+                  line-height: 3rem;
+                  .ant-select-selection {
+                    height: 3rem;
+                  line-height: 3rem;
+                  .ant-select-selection__rendered {
+                    height: 3rem;
+                    line-height: 3rem!important;
+                  }
+                  }
+                }
+              }
+              .form_info {
+                margin-top: 2.6rem;
+                .lis {
+                  &:nth-child(2) {
+                    margin-top: 3.4rem;
+                    .linefeeditem {
+                      .ant-form-item-label {
+                        padding-bottom: 1.4rem;
+                      }
+                    }
+                  }
+                  &:nth-child(3) {
+                    .linefeeditem {
+                      margin-top: 3.5rem;
+                    }
+                  } 
+                  &:nth-child(4) {
+                    .linefeeditem {
+                      margin-top: 3.1rem;
+                        .ant-form-item-label {
+                          padding-bottom: 1.5rem;
+                        }
+                    }
+                  } 
+                  &:nth-child(5) {
+                    .timePC {
+                      .formDiv {
+                        padding-left: 0;
+                        .titleFont {
+                          margin-bottom: 1.4rem;
+                        }
+                        .rihgtThis {
+                          .formInput {
+                            font-size: 1.125rem;
+                          }
+                          .selectImg {
+                            display: none!important;
+                          }
+                        }
+                      }
+                    }
+                  } 
+                }
+              }
+            }
+            &:nth-of-type(2) {
+              .form_info {
+                margin-top: 4.5rem;
+                .lis {
+                  .linelabelitem {
+                    .ant-form-item-control-wrapper {
+                      .ant-form-item-control {
+                        background-color: #E1E1E1;
+                        .ant-form-item-children {
+                          span {
+                            height: 3rem;
+                            line-height: 3rem;
+                          }
+                        }
+                      }
+
+                    }
+                  }
+                }
+              }
+            }
+            &:nth-of-type(3) {
+              .form_info {
+                margin-top: 5.3rem;
+              }
+            } 
+            &:nth-of-type(4) {
+              .form_info {
+                margin-top: 4.2rem;
+                .lis {
+                  &:nth-child(1) {
+                    .linefeeditem {
+                      .ant-form-item-label {
+                        padding-bottom: 1.8rem;
+                      }
+                    }
+                  }
+                  &:nth-child(2) {
+                    margin-top: 3.9rem;
+                    .linefeeditem {
+                      .ant-form-item-label {
+                        padding-bottom: 1.2rem;
+                      }
+                      //新增受益人-地址
+                      // .ant-form-item-control-wrapper {
+                      //   .ant-form-item-control {
+                      //     #chose_address {
+                      //       .add_input {
+                      //         width: 15.875rem;
+                      //         margin-right: 2.0625rem;
+                      //       }
+                      //       .select_opt {
+                      //         width: 15.875rem!important;
+                      //         &:nth-of-type(1) {
+                      //           margin-bottom: 2rem;
+                      //         }
+                      //         &:nth-of-type(2) {
+                      //           margin-right: 2.0625rem;
+                      //         }
+                      //       }
+                      //     }
+                      //   }
+                      // }
+                    }
+                  } 
+                  &:nth-child(3) {
+                    .linefeeditem {
+                      margin-top: 2.8rem;
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+      &:nth-of-type(1) {
+        .header {
+          margin-bottom: 2.5875rem!important;
+        }
+        .two_info {
+          .insurelable {
+            &:nth-child(2) {
+              margin-top: 1.375rem!important;
+            }
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        .header {
+          padding-top: 5.8rem;
+        }
+       /deep/ #two-one {
+
+         .form_info {
+           margin-top: 3.2rem;
+            .lis {
+              &:nth-child(1) {
+                .linefeeditem {
+                  margin-bottom: 1rem;
+                  .ant-form-item-label {
+                    margin-bottom: 2.0625rem;
+                  }
+                 
+                }
+              }
+              &:nth-child(2) {
+                margin-top: 1rem;
+                .ant-form-item-label {
+                  padding-bottom: 1rem;
+                }
+                .ant-form-item-control-wrapper {
+                  .ant-form-item-control {
+                    #chose_address {
+                      .add_input {
+                        width: 15.875rem;
+                        margin-right: 2.0625rem;
+                      }
+                      .select_opt {
+                        width: 15.875rem!important;
+                        &:nth-of-type(1) {
+                          margin-bottom: 2rem;
+                        }
+                        &:nth-of-type(2) {
+                          margin-right: 2.0625rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              } 
+              &:nth-child(3) {
+                .linefeeditem  {
+                  margin-top: 2.1rem;
+                  .tip {
+                    margin-top: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        .header {
+          padding-top: 4.3rem;
+        }
+        /deep/ #two-two {
+          .form_info {
+            margin-top: 3.2rem;
+            .lis {
+              .linefeeditem {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        .addBenef {
+          /deep/ #two-three {
+            .form_info {
+              margin-top: 3.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+// }

@@ -77,7 +77,7 @@
             </p>
             <antform :premData="beneficiaryType" @change="benefichange" line="2" id="two-two"></antform>
             <!-- 指定受益人 -->
-            <div v-if="beneficiaryType.beneficiaryType != undefined &&beneficiaryType.beneficiaryType.value!='01'">
+            <div v-if="beneficiaryType.beneficiaryType != undefined &&beneficiaryType.beneficiaryType.value!='01'" class="addBenef">
               <antform :premData="allocation" @change="allocachange" line="2" id="two-three"></antform>
               <div class="benefiBox" v-for='(arr,index) in beneficiary' :key="index" :id="setIDtwo(index)">
                 <!-- 删除按钮 -->
